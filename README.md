@@ -109,7 +109,7 @@ If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [ba
    - https://maskable.app/editor
    - https://www.favicon-generator.org/
 
-2. Place your new icons in `/public/favicon`
+2. Place your new icons in `public/favicon`
 
 3. Edit both the `site.webmanifest` and `browserconfig.xml` to meet your needs.
 
@@ -117,7 +117,9 @@ If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [ba
 
 #### Global
 
-Start by editing the [Global Config](#global-config) file. Values are passed down as props to the [`<SiteHead>` component](https://github.com/gregrickaby/nextjs-starter/blob/main/components/SiteHead.js).
+Start by editing the [Global Config](#global-config) file. Values are automatically passed down as props to the [`<SiteHead>` component](https://github.com/gregrickaby/nextjs-starter/blob/main/components/SiteHead.js).
+
+The `<SiteHead>` component also contains the necessary tags for Facebook and Twitter.
 
 #### Page Level
 
@@ -149,7 +151,7 @@ yarn add next-pwa
 
 2. Create a new file named `next.config.js` in the root of the app
 
-3. Copy & Paste the following and save:
+3. Copy & paste the following code and save:
 
 ```js
 // next.config.js
