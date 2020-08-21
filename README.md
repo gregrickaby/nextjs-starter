@@ -4,7 +4,7 @@ I love standards... but hate repeating myself.
 
 For every new Next.js project, I would literally copy & paste the same configurations, pages, and components from previous projects into a new one.
 
-After some research, I discovered that `create-next-app` [works with Github repositories](https://www.npmjs.com/package/create-next-app#options)! I had a 💡 moment, and decided to create **a slightly opinionated, yet still bare-bones Next.js starter** that I could use when starting a new project.
+After some research, I discovered that `create-next-app` [works with Github repositories](https://www.npmjs.com/package/create-next-app#options)! I had a 💡 moment, and decided to create **a slightly opinionated, yet still bare-bones Next.js starter** that I could use when starting new projects.
 
 👉 https://the-best-damn-nextjs-starter.vercel.app/
 
