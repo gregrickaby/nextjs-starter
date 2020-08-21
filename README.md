@@ -8,7 +8,7 @@ Frustrated, I started doing some research and discovered that `create-next-app` 
 
 👉 https://the-best-damn-nextjs-starter.vercel.app/
 
-✨ **Behold the Features** ✨
+✨ **Behold...The Features** ✨
 
 - TailwindCSS
 - Prettier
@@ -31,6 +31,10 @@ Lighthouse scores:
 WebPageTest scores:
 
 ![webpagetest-screenshot](https://dl.dropbox.com/s/mrm5nn3q2m1aams/Screen%20Shot%202020-08-21%20at%204.08.41%20PM.png?dl=0)
+
+If all this doesn't get your heart pumping? ¯\ _(ツ)_ /¯
+
+So what are you waiting for? Install the Best Damn Next.js Starter now and start saving time, today!
 
 ---
 
