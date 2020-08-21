@@ -6,10 +6,10 @@ import config from '@/lib/config'
 
 export default function Layout({children, ...props}) {
   return (
-    <div className="max-w-xs pt-12 m-auto text-center">
+    <div className="container mx-auto max-w-3xl p-4 space-y-8">
       <SiteHead title={props.title} description={props.description} />
       <Header />
-      <main>{children}</main>
+      <main className="site-content">{children}</main>
       <Footer />
     </div>
   )
@@ -23,5 +23,5 @@ Layout.defaultProps = {
 Layout.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  children: PropTypes.object.isRequired
+  children: PropTypes.array.isRequired
 }
