@@ -8,10 +8,6 @@ Behold 👉https://the-best-damn-nextjs-starter.vercel.app/
 
 ---
 
-![screenshot](https://dl.dropbox.com/s/qzb356hxdbt5mph/Screen%20Shot%202020-08-21%20at%204.06.05%20PM.png?dl=0)
-
----
-
 ## 🗂 Table of Contents <!-- omit in toc -->
 
 - [✨ Features](#-features)
