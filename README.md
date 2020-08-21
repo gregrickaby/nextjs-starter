@@ -11,8 +11,8 @@ Behold 👉https://the-best-damn-nextjs-starter.vercel.app/
 ## 🗂 Table of Contents <!-- omit in toc -->
 
 - [✨ Features](#-features)
+- [🚀 Install](#-install)
 - [🔧 Setup](#-setup)
-  - [Install](#install)
   - [Global Config](#global-config)
   - [Styles](#styles)
     - [TailwindCSS](#tailwindcss)
@@ -22,7 +22,7 @@ Behold 👉https://the-best-damn-nextjs-starter.vercel.app/
     - [Global](#global)
     - [Page Level](#page-level)
   - [Progressive Web App (Optional)](#progressive-web-app-optional)
-- [⌨️ Contributing](#️-contributing)
+- [:octocat: Contributing](#octocat-contributing)
 
 ---
 
@@ -45,15 +45,13 @@ Out of the box:
 
 ---
 
-## 🔧 Setup
-
-### Install
-
-To get started:
+## 🚀 Install
 
 ```bash
 npx create-next-app my-app --example https://github.com/gregrickaby/nextjs-starter
 ```
+
+## 🔧 Setup
 
 ### Global Config
 
@@ -166,6 +164,6 @@ module.exports = withPWA({
 
 ---
 
-## ⌨️ Contributing
+## :octocat: Contributing
 
 Even though this starter is built specifically for my needs? I would still love your feedback and welcome contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls).
