@@ -1,0 +1,50 @@
+{
+  "name": "nextjs-starter",
+  "version": "0.1.0",
+  "description": "A slightly opinionated, yet still bare-bones Next.js starter.",
+  "homepage": "https://github.com/gregrickaby/nextjs-starter/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregrickaby/nextjs-starter.git"
+  },
+  "author": "Greg Rickaby <gregrickaby@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gregrickaby/nextjs-starter/issues"
+  },
+  "private": true,
+  "license": "GPL-2.0",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "next build",
+    "clean": "rm -rf .next",
+    "deploy prod": "now --prod",
+    "deploy staging": "now",
+    "dev": "yarn clean && yarn lint && next dev",
+    "develop": "yarn dev",
+    "export": "next export",
+    "lint": "eslint ./ --fix || true",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "^1.7.3"
+  }
+}
