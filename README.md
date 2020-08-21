@@ -73,6 +73,8 @@ Run the built app in production mode:
 yarn start
 ```
 
+---
+
 ## 🔧 Setup
 
 ### Global Config
@@ -106,6 +108,8 @@ const config = {
 export default config
 ```
 
+---
+
 ### Styles
 
 #### TailwindCSS
@@ -122,6 +126,8 @@ Learn more about working with [TailwindCSS](https://tailwindcss.com/docs/preflig
 
 If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [baked into Next.js](https://nextjs.org/docs/basic-features/built-in-css-support)-- no additional configuration needed.
 
+---
+
 ### Site Icons & Favicons
 
 1. Create your own maskable icon and favicon using these tools:
@@ -132,6 +138,8 @@ If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [ba
 2. Place your new icons in `public/favicon`
 
 3. Edit both the `site.webmanifest` and `browserconfig.xml` to meet your needs.
+
+---
 
 ### SEO
 
@@ -158,6 +166,8 @@ export default function Contact() {
   )
 }
 ```
+
+---
 
 ### Progressive Web App (Optional)
 
