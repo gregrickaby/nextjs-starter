@@ -47,8 +47,30 @@ Out of the box:
 
 ## 🚀 Install
 
+Scaffolding a new app is easy with `create-next-app`:
+
 ```bash
 npx create-next-app my-app --example https://github.com/gregrickaby/nextjs-starter
+```
+
+Inside that directory, you can run several commands.
+
+Start the development server:
+
+```bash
+yarn dev
+```
+
+Build the app for production:
+
+```bash
+yarn build
+```
+
+Run the built app in production mode:
+
+```bash
+yarn start
 ```
 
 ## 🔧 Setup
