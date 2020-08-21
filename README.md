@@ -1,8 +1,8 @@
 # The Best Damn Next.js Starter <!-- omit in toc -->
 
-I'm love standards and hate repeating myself.
+I'm love standards but hate repeating myself.
 
-I was copying/pasting the same configs, pages, and components from one Next.js project to another. Frustrated, I decided to create **a slightly opinionated, yet still bare-bones Next.js starter** for building websites.
+I was literally copying & pasting the same configs, pages, and components from one Next.js project to another. Frustrated, I decided to create **a slightly opinionated, yet still bare-bones Next.js starter** for building websites.
 
 Behold 👉https://the-best-damn-nextjs-starter.vercel.app/
 
@@ -88,7 +88,7 @@ export default config
 
 #### TailwindCSS
 
-This starter leverages all the features that come with [TailwindCSS](https://tailwindcss.com/). Styling can be acomplished with one (or any combination) of the following:
+This starter leverages all the features that come with [TailwindCSS](https://tailwindcss.com/). Styling can be accomplished with one (or any combination) of the following:
 
 - Presentational classes in JSX
 - Use the [`@apply` directive](https://tailwindcss.com/docs/functions-and-directives#apply) in `/styles/index.css`
