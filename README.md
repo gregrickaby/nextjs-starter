@@ -1,35 +1,14 @@
 # The Best Damn Next.js Starter <!-- omit in toc -->
 
-I'm love standards but hate repeating myself.
+I love standards... but hate repeating myself.
 
-I was literally copying & pasting the same configs, pages, and components from one Next.js project to another. Frustrated, I decided to create **a slightly opinionated, yet still bare-bones Next.js starter** for building websites.
+For every new Next.js project I started, I would literally copy & paste the same configurations, pages, and components from my previous projects into my new one.
 
-Behold 👉https://the-best-damn-nextjs-starter.vercel.app/
+Frustrated, I started doing some research and discovered that `create-next-app` [works with Github repositories](https://www.npmjs.com/package/create-next-app#options). I decided to create **a slightly opinionated, yet still bare-bones Next.js starter** that I use when starting a new project.
 
----
+Behold https://the-best-damn-nextjs-starter.vercel.app/
 
-## 🗂 Table of Contents <!-- omit in toc -->
-
-- [✨ Features](#-features)
-- [🚀 Install](#-install)
-- [🔧 Setup](#-setup)
-  - [Global Config](#global-config)
-  - [Styles](#styles)
-    - [TailwindCSS](#tailwindcss)
-    - [CSS Modules or Sass](#css-modules-or-sass)
-  - [Site Icons & Favicons](#site-icons--favicons)
-  - [SEO](#seo)
-    - [Global](#global)
-    - [Page Level](#page-level)
-  - [Hosting at Vercel (optional)](#hosting-at-vercel-optional)
-  - [Progressive Web App (optional)](#progressive-web-app-optional)
-- [:octocat: Contributing](#octocat-contributing)
-
----
-
-## ✨ Features
-
-Out of the box:
+✨ **Features**
 
 - TailwindCSS
 - Prettier
@@ -38,7 +17,7 @@ Out of the box:
 - PropTypes
 - Bare-bones styles
 - Global config file
-- `<Layout>` component
+- Global `<Layout>` component
 - SEO at the page level
 - Can easily be made into a PWA
 - Ready for hosting at vercel.com
@@ -52,6 +31,24 @@ Lighthouse scores:
 WebPageTest scores:
 
 ![webpagetest-screenshot](https://dl.dropbox.com/s/mrm5nn3q2m1aams/Screen%20Shot%202020-08-21%20at%204.08.41%20PM.png?dl=0)
+
+---
+
+## 🗂 Table of Contents <!-- omit in toc -->
+
+- [🚀 Install](#-install)
+- [🔧 Setup](#-setup)
+  - [Global Config](#global-config)
+  - [Styles](#styles)
+    - [TailwindCSS](#tailwindcss)
+    - [CSS Modules or Sass](#css-modules-or-sass)
+  - [Site Icons & Favicons](#site-icons--favicons)
+  - [SEO](#seo)
+    - [Global](#global)
+    - [Page Level](#page-level)
+  - [Hosting at Vercel (optional)](#hosting-at-vercel-optional)
+  - [Progressive Web App (optional)](#progressive-web-app-optional)
+- [:octocat: Contributing](#octocat-contributing)
 
 ---
 
