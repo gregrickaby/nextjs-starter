@@ -120,7 +120,7 @@ Start by editing the [Global Config](#global-config) file. Values are passed dow
 
 #### Page Level
 
-Simply pass in a `title` and `description` at the page level like so:
+Simply pass in a `title` and `description` prop at the page level like so:
 
 ```js
 import Layout from '@/components/Layout'
