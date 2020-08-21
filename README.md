@@ -166,4 +166,6 @@ module.exports = withPWA({
 
 ## :octocat: Contributing
 
-Even though this starter is built specifically for my needs? I would still love your feedback and welcome contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls).
+Even though this starter is built specifically for my needs...I would still love feedback and welcome contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls).
+
+🍻
