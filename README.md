@@ -60,6 +60,7 @@ npx create-next-app my-app --example https://github.com/gregrickaby/nextjs-start
 The global config file `/lib/config.js` contains several constants used throughout this starter. Adjust to meet your needs:
 
 ```js
+// lib/config.js
 const config = {
   siteName: 'Site Name',
   siteDescription: 'The description of this website',
@@ -123,6 +124,7 @@ Start by editing the [Global Config](#global-config) file. Values are passed dow
 Simply pass in a `title` and `description` prop at the page level like so:
 
 ```js
+// pages/contact.js
 import Layout from '@/components/Layout'
 
 export default function Contact() {
@@ -150,6 +152,7 @@ yarn add next-pwa
 3. Copy & Paste the following and save:
 
 ```js
+// next.config.js
 const withPWA = require('next-pwa')
 module.exports = withPWA({
   pwa: {
