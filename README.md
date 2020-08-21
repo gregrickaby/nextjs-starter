@@ -57,7 +57,7 @@ npx create-next-app my-app --example https://github.com/gregrickaby/nextjs-start
 
 ### Global Config
 
-The global config file `/lib/config.js` contains several constants used throughout this starter. Adjust to meet your needs:
+The global config file `lib/config.js` contains several constants used throughout this starter. Adjust to meet your needs:
 
 ```js
 // lib/config.js
