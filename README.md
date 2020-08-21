@@ -19,6 +19,8 @@ Behold 👉https://the-best-damn-nextjs-starter.vercel.app/
     - [CSS Modules or Sass](#css-modules-or-sass)
   - [Site Icons & Favicons](#site-icons--favicons)
   - [SEO](#seo)
+    - [Global](#global)
+    - [Page Level](#page-level)
   - [Progressive Web App (Optional)](#progressive-web-app-optional)
 - [⌨️ Contributing](#️-contributing)
 
@@ -97,7 +99,7 @@ Learn more about working with [TailwindCSS](https://tailwindcss.com/docs/preflig
 
 #### CSS Modules or Sass
 
-If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [baked into Next.js](https://nextjs.org/docs/basic-features/built-in-css-support), with no additional configuration needed.
+If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [baked into Next.js](https://nextjs.org/docs/basic-features/built-in-css-support)-- no additional configuration needed.
 
 ### Site Icons & Favicons
 
@@ -112,7 +114,13 @@ If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [ba
 
 ### SEO
 
-Simply pass in a `title` and `description` prop to the `<Layout>` component like so:
+#### Global
+
+Start by editing the [Global Config](#global-config) file. Values are passed down as props to the [`<SiteHead>` component](https://github.com/gregrickaby/nextjs-starter/blob/main/components/SiteHead.js).
+
+#### Page Level
+
+Simply pass in a `title` and `description` at the page level like so:
 
 ```js
 import Layout from '@/components/Layout'
