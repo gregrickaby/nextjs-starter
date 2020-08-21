@@ -1,14 +1,30 @@
-# The Best Damn Next.js Starter
+# The Best Damn Next.js Starter <!-- omit in toc -->
 
-I'm love standards and I hate repeating myself.
+I'm love standards and hate repeating myself.
 
-So instead of copying/pasting the same configs, pages, and components from one Next.js project to another? **I decided to create a slightly opinionated, yet still bare-bones Next.js starter.**
+I was copying/pasting the same configs, pages, and components from one Next.js project to another. Frustrated, I decided to create **a slightly opinionated, yet still bare-bones Next.js starter** for building websites.
 
 Behold 👉https://the-best-damn-nextjs-starter.vercel.app/
 
 ---
 
-## Features
+## 🗂 Table of Contents <!-- omit in toc -->
+
+- [✨ Features](#-features)
+- [🔧 Setup](#-setup)
+  - [Install](#install)
+  - [Global Config](#global-config)
+  - [Styles](#styles)
+    - [TailwindCSS](#tailwindcss)
+    - [CSS Modules or Sass](#css-modules-or-sass)
+  - [Site Icons & Favicons](#site-icons--favicons)
+  - [SEO](#seo)
+  - [Progressive Web App (Optional)](#progressive-web-app-optional)
+- [⌨️ Contributing](#️-contributing)
+
+---
+
+## ✨ Features
 
 Out of the box:
 
@@ -16,13 +32,14 @@ Out of the box:
 - Prettier
 - ESLint
 - Stylelint
-- Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
-- Bare-bones styles and opinions
-- `<Layout>` component for consistant styles from page-to-page
-- Global config available in `/lib/config.js`
+- PropTypes
+- Bare-bones styles
+- Global config file
+- `<Layout>` component
 - SEO at the page level
 - Perfect Lighthouse scores
 - Can easily be made into a PWA
+- Ready for hosting at vercel.com
 
 ---
 
@@ -66,7 +83,7 @@ const config = {
 export default config
 ```
 
-### Styles and CSS
+### Styles
 
 #### TailwindCSS
 
@@ -92,6 +109,23 @@ If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [ba
 2. Place your new icons in `/public/favicon`
 
 3. Edit both the `site.webmanifest` and `browserconfig.xml` to meet your needs.
+
+### SEO
+
+Simply pass in a `title` and `description` prop to the `<Layout>` component like so:
+
+```js
+import Layout from '@/components/Layout'
+
+export default function Contact() {
+  return (
+    <Layout title="Contact" description="Get in touch!">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Blah blah...</p>
+    </Layout>
+  )
+}
+```
 
 ### Progressive Web App (Optional)
 
@@ -121,4 +155,4 @@ module.exports = withPWA({
 
 ## ⌨️ Contributing
 
-I would love your feedback and welcome contributions via Issues and Pull Requests.
+Even though this starter is built specifically for my needs? I would still love your feedback and welcome contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls).
