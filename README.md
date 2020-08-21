@@ -25,7 +25,8 @@ Behold 👉https://the-best-damn-nextjs-starter.vercel.app/
   - [SEO](#seo)
     - [Global](#global)
     - [Page Level](#page-level)
-  - [Progressive Web App (Optional)](#progressive-web-app-optional)
+  - [Hosting at Vercel (optional)](#hosting-at-vercel-optional)
+  - [Progressive Web App (optional)](#progressive-web-app-optional)
 - [:octocat: Contributing](#octocat-contributing)
 
 ---
@@ -45,9 +46,16 @@ Out of the box:
 - SEO at the page level
 - Can easily be made into a PWA
 - Ready for hosting at vercel.com
-- Perfect damn Lighthouse scores
+
+**_Wait!_ There's more!**
+
+Lighthouse scores:
 
 ![lighthouse-screenshot](https://dl.dropbox.com/s/0qkqq9r9vslhv5q/Screen%20Shot%202020-08-21%20at%204.05.28%20PM.png?dl=0)
+
+WebPageTest scores:
+
+![webpagetest-screenshot](https://dl.dropbox.com/s/mrm5nn3q2m1aams/Screen%20Shot%202020-08-21%20at%204.08.41%20PM.png?dl=0)
 
 ---
 
@@ -175,7 +183,19 @@ export default function Contact() {
 
 ---
 
-### Progressive Web App (Optional)
+### Hosting at Vercel (optional)
+
+The starter ships with a `vercel.json` file.
+
+If you already have an account with Vercel and it's [connected to your Github account](https://vercel.com/docs/git-integrations/vercel-for-github)...then magic awaits.
+
+When you push this to a new repository on Github, Vercel will _automagically_ deploy a new hosting project, create preview URLs, and drop a link to the production URL in the repo description. 🤯
+
+Learn more about Vercel [configuration options](https://vercel.com/docs/configuration).
+
+---
+
+### Progressive Web App (optional)
 
 If you want to turn your website into a [Progressive Web App](https://web.dev/progressive-web-apps/) (PWA), it couldn't be easier:
 
