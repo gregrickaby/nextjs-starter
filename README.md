@@ -4,6 +4,10 @@ I'm love standards.
 
 So instead of copying/pasting the same configs, pages, and components from one Next.js project to another? **I decided to create a slightly opinionated, yet still bare-bones Next.js starter.**
 
+Behold, the best damn Next.js Starter out there!
+
+👉https://the-best-damn-nextjs-starter.vercel.app/
+
 ---
 
 ## Features
