@@ -6,9 +6,9 @@ For every new Next.js project, I would literally copy & paste the same configura
 
 Frustrated, I started doing some research and discovered that `create-next-app` [works with Github repositories](https://www.npmjs.com/package/create-next-app#options). I decided to create **a slightly opinionated, yet still bare-bones Next.js starter** that I use when starting a new project.
 
-Behold https://the-best-damn-nextjs-starter.vercel.app/
+👉 https://the-best-damn-nextjs-starter.vercel.app/
 
-✨ **Features**
+✨ **Behold the Features** ✨
 
 - TailwindCSS
 - Prettier
