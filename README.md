@@ -47,13 +47,13 @@ Out of the box:
 
 ## 🚀 Install
 
-Scaffolding a new app is easy with `create-next-app`:
+Installation is easy with `create-next-app`:
 
 ```bash
 npx create-next-app my-app --example https://github.com/gregrickaby/nextjs-starter
 ```
 
-Inside that directory, you can run several commands.
+Inside the app directory, you can run several commands.
 
 Start the development server:
 
