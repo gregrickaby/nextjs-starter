@@ -6,10 +6,10 @@ import config from '@/lib/config'
 
 export default function Layout({children, ...props}) {
   return (
-    <div className="container mx-auto max-w-3xl p-4 space-y-8">
+    <div className="space-y-8">
       <SiteHead title={props.title} description={props.description} />
       <Header />
-      <main className="site-content">{children}</main>
+      <main className="wrap site-content">{children}</main>
       <Footer />
     </div>
   )
