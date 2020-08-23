@@ -15,12 +15,14 @@ After some research, I discovered that **`create-next-app`** [works with](https:
 - ESLint
 - Stylelint
 - PropTypes
+- React Hooks
 - Bare-bones styles
 - Global config file
 - Global `<Layout>` component
 - SEO at the page level
+- Data fetching via SWR
 - Can easily be made into a PWA
-- Ready for hosting at vercel.com
+- Ready for hosting at Vercel
 
 🛑 **_Wait!_ There's more!**
 
