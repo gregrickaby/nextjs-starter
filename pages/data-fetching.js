@@ -3,7 +3,7 @@ import Layout from '@/components/Layout'
 
 export default function Profile() {
   const {data, isLoading, isError} = useFetchData(
-    `https://swapi.dev/api/people/1`
+    `https://cors-anywhere.herokuapp.com/https://swapi.dev/api/people/1`
   )
 
   return (
