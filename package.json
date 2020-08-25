@@ -16,23 +16,14 @@
   "engines": {
     "node": ">=10"
   },
-  "scripts": {
-    "build": "next build",
-    "clean": "rm -rf .next",
-    "deploy prod": "now --prod",
-    "deploy staging": "now",
-    "dev": "yarn clean && yarn lint && next dev",
-    "develop": "yarn dev",
-    "export": "next export",
-    "lint": "eslint ./ --fix || true",
-    "start": "next start"
+  "resolutions": {
+    "webpack": "^5.0.0-beta.28"
   },
   "dependencies": {
     "hamburger-react": "^2.1.1",
-    "next": "latest",
+    "next": "next@canary",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "swr": "^0.3.1"
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
     "eslint": "^7.7.0",
@@ -48,5 +39,16 @@
     "prop-types": "^15.7.2",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^1.7.3"
+  },
+  "scripts": {
+    "build": "next build",
+    "clean": "rm -rf .next",
+    "deploy prod": "now --prod",
+    "deploy staging": "now",
+    "dev": "yarn clean && yarn lint && next dev",
+    "develop": "yarn dev",
+    "export": "next export",
+    "lint": "eslint ./ --fix || true",
+    "start": "next start"
   }
 }
