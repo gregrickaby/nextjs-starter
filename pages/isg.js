@@ -6,8 +6,8 @@ export default function IncrementalStaticRegeneration(props) {
   const posts = props.data.data.children
   return (
     <Layout
-      title="Incremental Static Regeneration"
-      description="A static page that updates every X seconds."
+      title="Incremental Static Regeneration (ISG)"
+      description="A static page that updates every 60 seconds."
     >
       <h1>The latest from r/all</h1>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -61,9 +61,5 @@ export async function getStaticProps() {
 }
 
 IncrementalStaticRegeneration.propTypes = {
-  data: PropTypes.object,
-  subreddit: PropTypes.string,
-  thumbnail: PropTypes.string,
-  title: PropTypes.string,
-  ups: PropTypes.string
+  data: PropTypes.object
 }
