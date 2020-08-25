@@ -20,6 +20,7 @@ After some research, I discovered that **`create-next-app`** [works with](https:
 - Global config file
 - Global `<Layout>` component
 - SEO at the page level
+- SSR page demo
 - SSG page demo
 - ISG page demo
 - Can easily be made into a PWA
