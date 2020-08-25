@@ -23,7 +23,7 @@ export default function StaticGeneration(props) {
         </svg>
         <p className="pt-4">
           This page is generated at build time using Static Site Generation
-          (SSR) from{' '}
+          (SSG) from{' '}
           <a href="https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation">
             <strong>getStaticProps()</strong>
           </a>
