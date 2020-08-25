@@ -7,10 +7,6 @@
   @apply py-4 duration-100 ease-in-out;
 }
 
-.wrap {
-  @apply max-w-3xl mx-auto;
-}
-
 .site-content h1 {
   @apply text-3xl font-bold leading-10 pb-4;
 }

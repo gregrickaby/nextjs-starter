@@ -9,7 +9,9 @@ export default function Layout({children, ...props}) {
     <div className="space-y-8">
       <SiteHead title={props.title} description={props.description} />
       <Header />
-      <main className="wrap site-content">{children}</main>
+      <main className="site-content max-w-3xl mx-auto px-4 lg:px-0">
+        {children}
+      </main>
       <Footer />
     </div>
   )

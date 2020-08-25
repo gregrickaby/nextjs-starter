@@ -13,7 +13,7 @@ export default function Header() {
       ref={headerRef}
       className="sticky top-0 py-8 transition-all bg-white border-b border-gray-200"
     >
-      <div className="wrap flex items-center justify-between">
+      <div className="max-w-3xl mx-auto px-4 lg:px-0 flex items-center justify-between">
         <Logo />
         <Navigation />
       </div>

@@ -3,16 +3,18 @@ import config from '@/lib/config'
 
 export default function Footer() {
   return (
-    <footer className="text-center text-sm border-t-2 border-gray-400 pt-2">
-      &copy; {new Date().getFullYear()} {config.siteName} by {config.author}{' '}
-      &middot;{' '}
-      <Link href={config.social.github.href}>
-        <a>Github</a>
-      </Link>{' '}
-      &middot;{' '}
-      <Link href={config.social.twitter.href}>
-        <a>Twitter</a>
-      </Link>
+    <footer className="bg-white border-t border-gray-200">
+      <div className="max-w-3xl mx-auto p-4 lg:px-0 text-center text-sm">
+        &copy; {new Date().getFullYear()} {config.siteName} by {config.author}{' '}
+        &middot;{' '}
+        <Link href={config.social.github.href}>
+          <a>Github</a>
+        </Link>{' '}
+        &middot;{' '}
+        <Link href={config.social.twitter.href}>
+          <a>Twitter</a>
+        </Link>
+      </div>
     </footer>
   )
 }
