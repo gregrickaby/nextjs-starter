@@ -4,6 +4,7 @@ export default function About() {
   return (
     <Layout title="About" description="Learn more about this website">
       <h1>About</h1>
+      <p>This is a simple static page.</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Septem autem
         illi non suo, sed populorum suffragio omnium nominati sunt. Nos quidem

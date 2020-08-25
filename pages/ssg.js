@@ -53,7 +53,7 @@ export async function getStaticProps() {
 
 StaticGeneration.propTypes = {
   data: PropTypes.shape({
-    avatar_urls: PropTypes.string,
+    avatar_urls: PropTypes.object,
     description: PropTypes.string,
     name: PropTypes.string,
     url: PropTypes.string
