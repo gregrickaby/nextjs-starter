@@ -36,7 +36,7 @@ export default function ServerSideRendering(props) {
           <article key={index}>
             <h1>
               <a
-                href={`https://www.reddit.com${post.link}`}
+                href={post.link}
                 dangerouslySetInnerHTML={{__html: post.title.rendered}}
               />
             </h1>
