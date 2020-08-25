@@ -1,6 +1,6 @@
 import {useEffect, useRef} from 'react'
 import {shrinkHeader} from '@/lib/functions'
-import Logo from '@/components/logo'
+import Logo from '@/components/Logo'
 import Navigation from '@/components/Navigation'
 
 export default function Header() {
