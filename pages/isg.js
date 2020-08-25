@@ -56,7 +56,7 @@ export default function IncrementalStaticRegeneration(props) {
  * @see https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
  */
 export async function getStaticProps() {
-  const data = await fetcher(`https://www.reddit.com/r/all/.json?limit=10`)
+  const data = await fetcher(`https://www.reddit.com/r/all/.json?limit=9`)
   return {props: {data}, revalidate: 60}
 }
 
