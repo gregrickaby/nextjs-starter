@@ -19,14 +19,11 @@ function Links() {
 
 function Drawer() {
   return (
-    <div className="absolute w-3/5 h-screen py-12 px-4 top-0 right-0 flex flex-col bg-white shadow-md">
+    <div className="absolute w-56 h-screen py-12 px-4 top-0 right-0 flex flex-col bg-white shadow-md">
       <Links />
     </div>
   )
 }
-// on mobile, display the burger, hide the links
-// on mobile, when the burger is clicked, display the drawer
-// on desktop, display the menu
 
 export default function Navigation() {
   const [isOpen, setOpen] = useState(false)

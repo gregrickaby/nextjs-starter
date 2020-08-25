@@ -1,7 +1,23 @@
 import {useEffect, useRef} from 'react'
+import Link from 'next/link'
 import {shrinkHeader} from '@/lib/functions'
-import Logo from '@/components/Logo'
 import Navigation from '@/components/Navigation'
+
+function Logo() {
+  return (
+    <Link href="/">
+      <a>
+        <img
+          src="/logo.svg"
+          alt="site logo"
+          loading="lazy"
+          height="128"
+          width="128"
+        />
+      </a>
+    </Link>
+  )
+}
 
 export default function Header() {
   const headerRef = useRef(null)
