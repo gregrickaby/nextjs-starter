@@ -170,7 +170,7 @@ Simply pass in a `title` and `description` prop at the page level like so:
 
 ```js
 // pages/contact.js
-import Layout from '@/components/Layout'
+import Layout from '@/components/global/Layout'
 
 export default function Contact() {
   return (

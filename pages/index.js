@@ -1,5 +1,5 @@
 import config from '@/lib/config'
-import Layout from '@/components/Layout'
+import Layout from '@/components/global/Layout'
 
 export default function HomePage() {
   return (

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import SiteHead from '@/components/SiteHead'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import SiteHead from './SiteHead'
+import Header from './Header'
+import Footer from './Footer'
 import config from '@/lib/config'
 
 export default function Layout({children, ...props}) {
