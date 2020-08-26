@@ -1,44 +1,8 @@
 # Next.js Starter <!-- omit in toc -->
 
-I love standards... but hate repeating myself.
-
-For every new Next.js project, I would literally copy & paste the same configurations, pages, and components from previous projects into a new one.
-
-After some research, I discovered that **`create-next-app`** [works with](https://www.npmjs.com/package/create-next-app#options) git repositories! I had a 💡 moment, and decided to create **a slightly opinionated, yet still bare-bones Next.js starter** that I could use when starting new projects.
+A slightly opinionated, yet still bare-bones Next.js starter.
 
 👉 https://the-nextjs-starter.vercel.app/
-
-✨ **Behold...The Features** ✨
-
-- TailwindCSS
-- Prettier
-- ESLint
-- Stylelint
-- PropTypes
-- React Hooks
-- Bare-bones styles
-- Global config file
-- Global `<Layout>` component
-- SEO at the page level
-- SSR page demo
-- SSG page demo
-- ISG page demo
-- Can easily be made into a PWA
-- Ready for hosting at Vercel
-
-🛑 **_Wait!_ There's more!**
-
-Lighthouse scores:
-
-![lighthouse-screenshot](https://dl.dropbox.com/s/0qkqq9r9vslhv5q/Screen%20Shot%202020-08-21%20at%204.05.28%20PM.png?dl=0)
-
-WebPageTest scores:
-
-![webpagetest-screenshot](https://dl.dropbox.com/s/mrm5nn3q2m1aams/Screen%20Shot%202020-08-21%20at%204.08.41%20PM.png?dl=0)
-
-WOW! 👏🏻
-
-So what are you waiting for? Install the **Best Damn Next.js Starter** now and start saving time (and 💰), today!
 
 ---
 
