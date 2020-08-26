@@ -1,4 +1,4 @@
-# The Best Damn Next.js Starter <!-- omit in toc -->
+# Next.js Starter <!-- omit in toc -->
 
 I love standards... but hate repeating myself.
 
