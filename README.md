@@ -6,7 +6,7 @@ For every new Next.js project, I would literally copy & paste the same configura
 
 After some research, I discovered that **`create-next-app`** [works with](https://www.npmjs.com/package/create-next-app#options) git repositories! I had a 💡 moment, and decided to create **a slightly opinionated, yet still bare-bones Next.js starter** that I could use when starting new projects.
 
-👉 https://the-best-damn-nextjs-starter.vercel.app/
+👉 https://the-nextjs-starter.vercel.app/
 
 ✨ **Behold...The Features** ✨
 
@@ -170,7 +170,7 @@ Simply pass in a `title` and `description` prop at the page level like so:
 
 ```js
 // pages/contact.js
-import Layout from '@/components/global/Layout'
+import Layout from '@/components/Layout'
 
 export default function Contact() {
   return (
