@@ -7,16 +7,16 @@ import {AlertInfo} from '@/components/shared/Alerts'
 export default function IncrementalStaticRegeneration(props) {
   return (
     <Layout
-      title="Incremental Static Regeneration (ISG)"
+      title="Incremental Static Regeneration (ISR)"
       description="A static page that updates in the background every 60 seconds."
     >
       <div className="container">
-        <h1>Incremental Static Regeneration (ISG) Example</h1>
+        <h1>Incremental Static Regeneration (ISR) Example</h1>
 
         <AlertInfo>
           The content below is sourced from the WordPress REST-API.{' '}
           <a href="https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration">
-            Learn more about ISG.
+            Learn more about ISR.
           </a>
         </AlertInfo>
 
