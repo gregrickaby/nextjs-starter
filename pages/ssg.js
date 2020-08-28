@@ -10,27 +10,29 @@ export default function StaticGeneration(props) {
       title="Static Generation (SSG)"
       description="A statically generated page with data from a REST-API."
     >
-      <h1>Static Generation (SSG) Example</h1>
+      <div className="container">
+        <h1>Static Generation (SSG) Example</h1>
 
-      <AlertInfo>
-        The content below is sourced from the WordPress REST-API.{' '}
-        <a href="https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation">
-          Learn more about SSG.
-        </a>
-      </AlertInfo>
+        <AlertInfo>
+          The content below is sourced from the WordPress REST-API.{' '}
+          <a href="https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation">
+            Learn more about SSG.
+          </a>
+        </AlertInfo>
 
-      <section>
-        {props.data.map((post, index) => (
-          <article key={index}>
-            <h1>
-              <Link href={`/posts/${post.id}`}>
-                <a dangerouslySetInnerHTML={{__html: post.title.rendered}} />
-              </Link>
-            </h1>
-            <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
-          </article>
-        ))}
-      </section>
+        <section>
+          {props.data.map((post, index) => (
+            <article key={index}>
+              <h1>
+                <Link href={`/posts/${post.id}`}>
+                  <a dangerouslySetInnerHTML={{__html: post.title.rendered}} />
+                </Link>
+              </h1>
+              <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
+            </article>
+          ))}
+        </section>
+      </div>
     </Layout>
   )
 }

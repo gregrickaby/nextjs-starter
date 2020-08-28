@@ -10,27 +10,29 @@ export default function IncrementalStaticRegeneration(props) {
       title="Incremental Static Regeneration (ISG)"
       description="A static page that updates in the background every 60 seconds."
     >
-      <h1>Incremental Static Regeneration (ISG) Example</h1>
+      <div className="container">
+        <h1>Incremental Static Regeneration (ISG) Example</h1>
 
-      <AlertInfo>
-        The content below is sourced from the WordPress REST-API.{' '}
-        <a href="https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration">
-          Learn more about ISG.
-        </a>
-      </AlertInfo>
+        <AlertInfo>
+          The content below is sourced from the WordPress REST-API.{' '}
+          <a href="https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration">
+            Learn more about ISG.
+          </a>
+        </AlertInfo>
 
-      <section>
-        {props.data.map((post, index) => (
-          <article key={index}>
-            <h1>
-              <Link href={`/posts/${post.id}`}>
-                <a dangerouslySetInnerHTML={{__html: post.title.rendered}} />
-              </Link>
-            </h1>
-            <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
-          </article>
-        ))}
-      </section>
+        <section>
+          {props.data.map((post, index) => (
+            <article key={index}>
+              <h1>
+                <Link href={`/posts/${post.id}`}>
+                  <a dangerouslySetInnerHTML={{__html: post.title.rendered}} />
+                </Link>
+              </h1>
+              <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
+            </article>
+          ))}
+        </section>
+      </div>
     </Layout>
   )
 }

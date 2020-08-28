@@ -10,27 +10,29 @@ export default function ServerSideRendering(props) {
       title="Server-side Rendering (SSR)"
       description="A server-side rendered page with data from a REST-API."
     >
-      <h1>Server-side Rendering (SSR) Example</h1>
+      <div className="container">
+        <h1>Server-side Rendering (SSR) Example</h1>
 
-      <AlertInfo>
-        The content below is sourced from the WordPress REST-API.{' '}
-        <a href="https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering">
-          Learn more about SSR.
-        </a>
-      </AlertInfo>
+        <AlertInfo>
+          The content below is sourced from the WordPress REST-API.{' '}
+          <a href="https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering">
+            Learn more about SSR.
+          </a>
+        </AlertInfo>
 
-      <section>
-        {props.data.map((post, index) => (
-          <article key={index}>
-            <h1>
-              <Link href={`/posts/${post.id}`}>
-                <a dangerouslySetInnerHTML={{__html: post.title.rendered}} />
-              </Link>
-            </h1>
-            <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
-          </article>
-        ))}
-      </section>
+        <section>
+          {props.data.map((post, index) => (
+            <article key={index}>
+              <h1>
+                <Link href={`/posts/${post.id}`}>
+                  <a dangerouslySetInnerHTML={{__html: post.title.rendered}} />
+                </Link>
+              </h1>
+              <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
+            </article>
+          ))}
+        </section>
+      </div>
     </Layout>
   )
 }

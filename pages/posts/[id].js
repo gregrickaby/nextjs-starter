@@ -6,19 +6,21 @@ import {AlertInfo} from '@/components/shared/Alerts'
 export default function BlogPost({post}) {
   return (
     <Layout title={post.title.rendered} description={post.excerpt.rendered}>
-      <AlertInfo>
-        The content below is sourced from the WordPress REST-API.{' '}
-        <a href="https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation">
-          Learn more about SSG.
-        </a>
-      </AlertInfo>
+      <div className="container">
+        <AlertInfo>
+          The content below is sourced from the WordPress REST-API.{' '}
+          <a href="https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation">
+            Learn more about SSG.
+          </a>
+        </AlertInfo>
 
-      <section>
-        <article>
-          <h1 dangerouslySetInnerHTML={{__html: post.title.rendered}} />
-          <div dangerouslySetInnerHTML={{__html: post.content.rendered}} />
-        </article>
-      </section>
+        <section>
+          <article>
+            <h1 dangerouslySetInnerHTML={{__html: post.title.rendered}} />
+            <div dangerouslySetInnerHTML={{__html: post.content.rendered}} />
+          </article>
+        </section>
+      </div>
     </Layout>
   )
 }

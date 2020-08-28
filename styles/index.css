@@ -6,19 +6,3 @@
 .shrink {
   @apply py-4 duration-100 ease-in-out;
 }
-
-.site-content h1 {
-  @apply text-3xl font-bold leading-10 pb-4;
-}
-
-.site-content p {
-  @apply pb-4 leading-relaxed;
-}
-
-.site-content a {
-  @apply underline;
-}
-
-.site-content a:hover {
-  @apply no-underline;
-}

@@ -4,7 +4,7 @@ import config from '@/lib/config'
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-3xl mx-auto p-4 lg:px-0 text-center text-sm">
+      <div className="container p-4 lg:px-0 text-center text-sm">
         &copy; {new Date().getFullYear()} {config.siteName} by {config.author}{' '}
         &middot;{' '}
         <Link href={config.social.github.href}>
