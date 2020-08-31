@@ -26,7 +26,7 @@ A slightly opinionated, yet still bare-bones Next.js starter.
 
 ## 🚀 Install
 
-Installation is easy with `create-next-app`:
+Use [create-next-app](https://www.npmjs.com/package/create-next-app) to install:
 
 ```bash
 npx create-next-app my-app --example https://github.com/gregrickaby/nextjs-starter
