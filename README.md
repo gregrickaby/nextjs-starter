@@ -29,7 +29,7 @@ A slightly opinionated, yet still bare-bones Next.js starter.
 Use [create-next-app](https://www.npmjs.com/package/create-next-app) to install:
 
 ```bash
-npx create-next-app my-app --example https://github.com/gregrickaby/nextjs-starter
+yarn create next-app --example https://github.com/gregrickaby/nextjs-starter
 ```
 
 Inside the app directory, you can run several commands.
