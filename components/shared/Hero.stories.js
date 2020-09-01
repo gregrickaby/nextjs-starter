@@ -1,6 +1,5 @@
 import React from 'react'
-import {action} from '@storybook/addon-actions'
-import {withKnobs, object} from '@storybook/addon-knobs'
+import {withKnobs} from '@storybook/addon-knobs'
 import Hero from './Hero'
 
 /**
