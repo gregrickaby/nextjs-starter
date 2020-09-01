@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import SiteHead from './SiteHead'
+import Meta from './Meta'
 import Header from './Header'
 import Footer from './Footer'
 import config from '@/lib/config'
@@ -7,7 +7,7 @@ import config from '@/lib/config'
 export default function Layout({children, ...props}) {
   return (
     <>
-      <SiteHead title={props.title} description={props.description} />
+      <Meta title={props.title} description={props.description} />
       <Header />
       <main>{children}</main>
       <Footer />

@@ -2,7 +2,7 @@ import config from '@/lib/config'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-export default function SiteHead(props) {
+export default function Meta(props) {
   return (
     <Head>
       <title>
@@ -55,12 +55,12 @@ export default function SiteHead(props) {
   )
 }
 
-SiteHead.defaultProps = {
+Meta.defaultProps = {
   title: config.siteName,
   description: config.siteDescription
 }
 
-SiteHead.propTypes = {
+Meta.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string
 }
