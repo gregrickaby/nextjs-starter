@@ -37,16 +37,14 @@ const Template = (args) => <Hero {...args} {...actionsData} />
 // Reuse that template.
 export const Default = Template.bind({})
 Default.args = {
-  background: {
-    backgroundImage:
-      'https://i.picsum.photos/id/1059/1280/720.jpg?hmac=3ajpkbtku_zopsq04qdo4zx56f7j3j_esi0aqhxgad8'
-  },
+  background:
+    'https://images.unsplash.com/photo-1513106021000-168e5f56609d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2560&q=70',
   title: 'Next.js Starter',
-  description: 'A slightly opinionated, yet still bare-bones Next.js starter.'
+  description: 'A slightly opinionated, yet bare-bones Next.js starter.'
 }
-export const Empty = Template.bind({})
-Empty.args = {
-  background: {},
-  title: '',
-  description: ''
+export const NoBackground = Template.bind({})
+NoBackground.args = {
+  background: '',
+  title: 'Next.js Starter',
+  description: 'A slightly opinionated, yet bare-bones Next.js starter.'
 }

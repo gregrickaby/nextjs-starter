@@ -1,6 +1,6 @@
 import React from 'react'
 import {withKnobs} from '@storybook/addon-knobs'
-import {AlertInfo} from './Alerts'
+import {Info} from './Alerts'
 
 /**
  * The following is a story.
@@ -18,8 +18,8 @@ import {AlertInfo} from './Alerts'
  * @link https://storybook.js.org/docs/react/writing-stories/introduction#default-export
  */
 export default {
-  component: AlertInfo, // The <Component> itself.
-  title: 'Alert - Info', // How to refer to the component in the sidebar of the Storybook app.
+  component: Info, // The <Component> itself.
+  title: 'Alerts', // How to refer to the component in the sidebar of the Storybook app.
   decorators: [withKnobs], // Wrap a component in arbitrary markup when rendering a story.
   excludeStories: /.*Data$/ // Exports in the story file that should **not** be rendered as stories.
 }
@@ -32,14 +32,14 @@ export default {
 export const actionsData = {}
 
 // Create a “template” of how args map to rendering.
-const Template = (args) => <AlertInfo {...args} {...actionsData} />
+const Template = (args) => <Info {...actionsData}>{args.children}</Info>
 
 // Reuse that template.
-export const Default = Template.bind({})
-Default.args = {
-  children: {}
+export const AlertInfo = Template.bind({})
+AlertInfo.args = {
+  children: 'This is an informational alert.'
 }
 export const Empty = Template.bind({})
 Empty.args = {
-  children: {}
+  children: ''
 }

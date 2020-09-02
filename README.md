@@ -1,8 +1,37 @@
-# Next.js Starter <!-- omit in toc -->
+<div style="text-align: center;">
+<h1><em>The</em> Next.js Starter</h1>
+<p>A slightly opinionated, yet bare-bones Next.js starter.</p>
 
-A slightly opinionated, yet still bare-bones Next.js starter.
+<img alt="Logo" src="https://dl.dropboxusercontent.com/s/73uazv62zq7h4pn/nextjs-starter-logo.png?dl=0" height="200" />
 
-👉 https://the-nextjs-starter.vercel.app/
+https://the-nextjs-starter.vercel.app/
+
+<img alt="Dependencies" src="https://img.shields.io/david/gregrickaby/nextjs-starter?style=flat-square"/>
+
+<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/gregrickaby/nextjs-starter/next?style=flat-square">
+
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/gregrickaby/nextjs-starter?style=flat-square">
+
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/gregrickaby/nextjs-starter?style=flat-square">
+
+</div>
+
+---
+
+✨ **Behold...The Features** ✨
+
+- TailwindCSS
+- Storybook
+- React Hooks
+- Prettier
+- ESLint
+- Stylelint
+- PropTypes
+- Minimal styles
+- Global config file
+- SEO at the page level
+- PWA Ready
+- Ready for hosting at Vercel
 
 ---
 
@@ -21,6 +50,7 @@ A slightly opinionated, yet still bare-bones Next.js starter.
   - [Hosting at Vercel (optional)](#hosting-at-vercel-optional)
   - [Progressive Web App (optional)](#progressive-web-app-optional)
 - [:octocat: Contributing](#octocat-contributing)
+- [Credits](#credits)
 
 ---
 
@@ -189,6 +219,8 @@ module.exports = withPWA({
 
 ## :octocat: Contributing
 
-Even though this starter was built specifically for my needs...I would still love feedback and would ❤️ contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls). 🍻
+I would love feedback contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls). 🍻
 
-✌️
+## Credits
+
+Illustration by Maria Shukshina from <a href="https://icons8.com/">Icons8</a>
