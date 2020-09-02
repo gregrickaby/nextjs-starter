@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types'
 import Layout from '@/components/global/Layout'
 import {fetcher} from '@/lib/functions'
-import {AlertInfo} from '@/components/shared/Alerts'
+import {Info} from '@/components/shared/Alerts'
 
 export default function BlogPost({post}) {
   return (
     <Layout title={post.title.rendered} description={post.excerpt.rendered}>
       <div className="container">
-        <AlertInfo>
+        <Info>
           The content below is sourced from the WordPress REST-API.{' '}
           <a href="https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation">
             Learn more about SSG.
           </a>
-        </AlertInfo>
+        </Info>
 
         <section>
           <article>

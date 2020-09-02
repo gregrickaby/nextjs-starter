@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Layout from '@/components/global/Layout'
 import {fetcher} from '@/lib/functions'
 import Link from 'next/link'
-import {AlertInfo} from '@/components/shared/Alerts'
+import {Info} from '@/components/shared/Alerts'
 
 export default function IncrementalStaticRegeneration(props) {
   return (
@@ -13,12 +13,12 @@ export default function IncrementalStaticRegeneration(props) {
       <div className="container">
         <h1>Incremental Static Regeneration (ISR) Example</h1>
 
-        <AlertInfo>
+        <Info>
           The content below is sourced from the WordPress REST-API.{' '}
           <a href="https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration">
             Learn more about ISR.
           </a>
-        </AlertInfo>
+        </Info>
 
         <section>
           {props.data.map((post, index) => (

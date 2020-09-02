@@ -1,5 +1,5 @@
 import Layout from '@/components/global/Layout'
-import {AlertInfo} from '@/components/shared/Alerts'
+import {Info} from '@/components/shared/Alerts'
 
 export default function About() {
   return (
@@ -7,12 +7,12 @@ export default function About() {
       <div className="container">
         <h1>About</h1>
 
-        <AlertInfo>
+        <Info>
           This is a basic page.{' '}
           <a href="https://nextjs.org/docs/basic-features/pages">
             Learn more about pages.
           </a>
-        </AlertInfo>
+        </Info>
 
         <p>I love standards... but hate repeating myself.</p>
         <p>
