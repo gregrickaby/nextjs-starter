@@ -1,7 +1,7 @@
 {
   "name": "nextjs-starter",
   "version": "0.1.0",
-  "description": "A slightly opinionated, yet still bare-bones Next.js starter.",
+  "description": "A slightly opinionated, yet bare-bones Next.js starter.",
   "homepage": "https://github.com/gregrickaby/nextjs-starter/blob/main/README.md",
   "repository": {
     "type": "git",
@@ -16,16 +16,20 @@
   "engines": {
     "node": ">=10"
   },
-  "resolutions": {
-    "webpack": "^5.0.0-beta.28"
-  },
   "dependencies": {
-    "hamburger-react": "^2.1.1",
+    "hamburger-react": "^2.2.0",
     "next": "next@canary",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-knobs": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/react": "^6.0.21",
+    "babel-loader": "^8.1.0",
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
@@ -37,11 +41,13 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.1",
     "prop-types": "^15.7.2",
+    "react-is": "^16.13.1",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^1.7.6"
   },
   "scripts": {
     "build": "next build",
+    "build-storybook": "build-storybook",
     "clean": "rm -rf .next",
     "deploy prod": "now --prod",
     "deploy staging": "now",
@@ -49,6 +55,7 @@
     "develop": "yarn dev",
     "export": "next export",
     "lint": "eslint ./ --fix || true",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006"
   }
 }
