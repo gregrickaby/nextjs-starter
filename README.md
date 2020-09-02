@@ -7,11 +7,10 @@
 
 https://the-nextjs-starter.vercel.app/
 
-<img alt="Dependencies" src="https://img.shields.io/david/gregrickaby/nextjs-starter?style=flat-square"/>
 <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/gregrickaby/nextjs-starter/next?style=flat-square">
+<img alt="GitHub package.json dependency version (dev)" src="https://img.shields.io/github/package-json/dependency-version/gregrickaby/nextjs-starter/dev/tailwindcss?style=flat-square">
+<img alt="GitHub package.json dependency version (dev)" src="https://img.shields.io/github/package-json/dependency-version/gregrickaby/nextjs-starter/dev/@storybook/react?style=flat-square">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/gregrickaby/nextjs-starter?style=flat-square">
-<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/gregrickaby/nextjs-starter?style=flat-square">
-
 </div>
 
 ---
