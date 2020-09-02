@@ -1,4 +1,5 @@
-<div style="text-align: center;">
+<div align="center">
+
 <h1><em>The</em> Next.js Starter</h1>
 <p>A slightly opinionated, yet bare-bones Next.js starter.</p>
 
@@ -7,11 +8,8 @@
 https://the-nextjs-starter.vercel.app/
 
 <img alt="Dependencies" src="https://img.shields.io/david/gregrickaby/nextjs-starter?style=flat-square"/>
-
 <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/gregrickaby/nextjs-starter/next?style=flat-square">
-
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/gregrickaby/nextjs-starter?style=flat-square">
-
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/gregrickaby/nextjs-starter?style=flat-square">
 
 </div>
