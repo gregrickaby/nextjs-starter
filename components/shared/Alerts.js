@@ -19,6 +19,22 @@ export function Info({children}) {
   )
 }
 
+export function Warning({children}) {
+  return (
+    <div
+      className="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4"
+      role="alert"
+    >
+      <p className="font-bold">Warning</p>
+      <p>{children}</p>
+    </div>
+  )
+}
+
 Info.propTypes = {
+  children: PropTypes.object.isRequired
+}
+
+Warning.propTypes = {
   children: PropTypes.object.isRequired
 }
