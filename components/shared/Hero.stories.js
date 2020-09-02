@@ -1,5 +1,4 @@
 import React from 'react'
-import {withKnobs} from '@storybook/addon-knobs'
 import Hero from './Hero'
 
 /**
@@ -15,17 +14,15 @@ import Hero from './Hero'
  */
 
 export default {
-  component: Hero,
-  title: 'Hero',
-  decorators: [withKnobs],
-  excludeStories: /.*Data$/
+  title: 'Components/Shared/Hero',
+  component: Hero
 }
 
-const HeroTemplate = (args) => <Hero {...args} />
+const Template = (args) => <Hero {...args} />
 
-export const Default = HeroTemplate.bind({})
-export const NoBackground = HeroTemplate.bind({})
-export const TooMuchText = HeroTemplate.bind({})
+export const Default = Template.bind({})
+export const NoBackground = Template.bind({})
+export const TooMuchText = Template.bind({})
 
 Default.args = {
   background:

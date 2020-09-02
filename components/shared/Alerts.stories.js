@@ -1,5 +1,4 @@
 import React from 'react'
-import {withKnobs} from '@storybook/addon-knobs'
 import {Info, Warning} from './Alerts'
 
 /**
@@ -15,10 +14,8 @@ import {Info, Warning} from './Alerts'
  */
 
 export default {
-  component: Info,
-  title: 'Alerts',
-  decorators: [withKnobs],
-  excludeStories: /.*Data$/
+  title: 'Components/Shared/Alerts',
+  component: Info
 }
 
 const InfoTemplate = (args) => <Info>{args.children}</Info>
