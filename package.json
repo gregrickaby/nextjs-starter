@@ -30,6 +30,7 @@
     "@storybook/addon-links": "^6.0.21",
     "@storybook/react": "^6.0.21",
     "babel-loader": "^8.1.0",
+    "chromatic": "^5.1.0",
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
@@ -56,6 +57,7 @@
     "export": "next export",
     "lint": "eslint ./ --fix || true",
     "start": "next start",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "chromatic": "npx chromatic --project-token mn2tcfg0gc"
   }
 }

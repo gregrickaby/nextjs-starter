@@ -17,18 +17,19 @@ https://the-nextjs-starter.vercel.app/
 
 ✨ **Behold...The Features** ✨
 
-- TailwindCSS
-- Storybook
-- React Hooks
-- Prettier
-- ESLint
-- Stylelint
-- PropTypes
+- [TailwindCSS](https://tailwindcss.com)
+- [Storybook](https://storybook.js.org)
+- [Chromatic](https://www.chromatic.com)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+- [Stylelint](https://stylelint.io/)
+- Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+- [Vercel](https://vercel.com/) hosting ready
 - Minimal styles
 - Global config file
 - SEO at the page level
 - PWA Ready
-- Ready for hosting at Vercel
 
 ---
 
