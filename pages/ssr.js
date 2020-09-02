@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Layout from '@/components/global/Layout'
 import {fetcher} from '@/lib/functions'
 import Link from 'next/link'
-import {Info} from '@/components/shared/Alerts'
+import {Info} from '@/components/blocks/Alerts'
 
 export default function ServerSideRendering(props) {
   return (

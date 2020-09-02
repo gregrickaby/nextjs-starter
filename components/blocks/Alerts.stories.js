@@ -14,7 +14,7 @@ import {Info, Warning} from './Alerts'
  */
 
 export default {
-  title: 'Components/Shared/Alerts',
+  title: 'Components/Blocks/Alerts',
   component: Info
 }
 

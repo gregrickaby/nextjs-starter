@@ -1,5 +1,5 @@
 import Layout from '@/components/global/Layout'
-import {Info} from '@/components/shared/Alerts'
+import {Info} from '@/components/blocks/Alerts'
 
 export default function About() {
   return (
