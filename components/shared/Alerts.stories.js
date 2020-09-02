@@ -1,45 +1,47 @@
 import React from 'react'
 import {withKnobs} from '@storybook/addon-knobs'
-import {Info} from './Alerts'
+import {Info, Warning} from './Alerts'
 
 /**
  * The following is a story.
  *
  * It follows the "Component Story Format" (CSF), an open standard
- * based on ES6 modules which is portable beyond Storybook.
+ * based on ES6 modules which is portable beyond Storybook. This is
+ * version 2 of that standard and uses args.
  *
- * @link https://storybook.js.org/docs/react/api/csf
- * @link https://storybook.js.org/docs/react/writing-stories/introduction
+ * @see https://storybook.js.org/docs/react/api/csf
+ * @see https://storybook.js.org/docs/react/writing-stories/introduction
+ * @see https://medium.com/storybookjs/introducing-storybook-args-2dadcdb777cc
  */
 
-/**
- * Register this story with Storybook app.
- *
- * @link https://storybook.js.org/docs/react/writing-stories/introduction#default-export
- */
 export default {
-  component: Info, // The <Component> itself.
-  title: 'Alerts', // How to refer to the component in the sidebar of the Storybook app.
-  decorators: [withKnobs], // Wrap a component in arbitrary markup when rendering a story.
-  excludeStories: /.*Data$/ // Exports in the story file that should **not** be rendered as stories.
+  component: Info,
+  title: 'Alerts',
+  decorators: [withKnobs],
+  excludeStories: /.*Data$/
 }
 
-/**
- * Callbacks that appears in the actions panel of the Storybook app when clicked.
- *
- * @link https://storybook.js.org/addons/introduction/#2-native-addons
- */
-export const actionsData = {}
+const InfoTemplate = (args) => <Info>{args.children}</Info>
+const WarningTemplate = (args) => <Warning>{args.children}</Warning>
 
-// Create a “template” of how args map to rendering.
-const Template = (args) => <Info {...actionsData}>{args.children}</Info>
+export const AlertInfo = InfoTemplate.bind({})
+export const EmptyInfo = InfoTemplate.bind({})
 
-// Reuse that template.
-export const AlertInfo = Template.bind({})
+export const AlertWarning = WarningTemplate.bind({})
+export const EmptyWarning = WarningTemplate.bind({})
+
 AlertInfo.args = {
   children: 'This is an informational alert.'
 }
-export const Empty = Template.bind({})
-Empty.args = {
+
+AlertWarning.args = {
+  children: 'Something has happened that needs your attention.'
+}
+
+EmptyInfo.args = {
+  children: ''
+}
+
+EmptyWarning.args = {
   children: ''
 }
