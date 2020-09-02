@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export function AlertInfo({children}) {
+export function Info({children}) {
   return (
     <div
       className="flex items-center bg-blue-500 text-white px-4 mb-8 rounded shadow"
@@ -19,6 +19,6 @@ export function AlertInfo({children}) {
   )
 }
 
-AlertInfo.propTypes = {
+Info.propTypes = {
   children: PropTypes.object.isRequired
 }
