@@ -67,7 +67,7 @@ Use [create-next-app](https://www.npmjs.com/package/create-next-app) to install:
 yarn create next-app --example https://github.com/gregrickaby/nextjs-starter
 ```
 
-Inside the app directory, you can run several commands.
+Inside the starter directory, you can run several commands.
 
 Start the development server:
 
