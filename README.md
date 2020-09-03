@@ -47,8 +47,15 @@ https://the-nextjs-starter.vercel.app/
     - [Page Level](#page-level)
   - [Hosting at Vercel (optional)](#hosting-at-vercel-optional)
   - [Progressive Web App (optional)](#progressive-web-app-optional)
+- [📚 Storybook (optional)](#-storybook-optional)
+  - [About](#about)
+  - [Configuration](#configuration)
+  - [Stories](#stories)
+- [♻️ Chromatic (optional)](#️-chromatic-optional)
+  - [About](#about-1)
+  - [Configuration](#configuration-1)
 - [:octocat: Contributing](#octocat-contributing)
-- [Credits](#credits)
+- [🙌🏻 Credits](#-credits)
 
 ---
 
@@ -215,10 +222,119 @@ module.exports = withPWA({
 
 ---
 
+## 📚 Storybook (optional)
+
+[View this starter's Storybook](https://main--5f4fb61efe7d0c0022b750b7.chromatic.com).
+
+### About
+
+This starter comes bundled with [Storybook](https://storybook.js.org/). Storybook runs alongside your app in development mode. It helps you build UI components isolated from the business logic and context of your app.
+
+Since Storybook v6, you can use both [Component Story Format](https://storybook.js.org/docs/react/api/csf) (CSF) v1 and the new v2 format for writing component examples [using args](https://storybook.js.org/docs/react/writing-stories/args).
+
+Storybook v6 ships by default with a set of [“essential” addons](https://storybook.js.org/docs/react/essentials/introduction) that add to the initial user experience:
+
+- [Actions](https://storybook.js.org/docs/react/essentials/actions)
+- [Backgrounds](https://storybook.js.org/docs/react/essentials/backgrounds)
+- [Controls](https://storybook.js.org/docs/react/essentials/controls)
+- [Docs](https://storybook.js.org/docs/react/writing-docs/docs-page)
+- [Toolbars & Globals](https://storybook.js.org/docs/react/essentials/toolbars-and-globals)
+- [Viewport](https://storybook.js.org/docs/react/essentials/viewport)
+
+In addition to the "essentials", I've also included both the [accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y) and links addon.
+
+Learn more by reading the [official docs](https://storybook.js.org/docs/react/get-started/introduction), and learn first hand by taking the [Learn Storybook](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/) course.
+
+### Configuration
+
+The `.storybook` folder is where configuration files are placed.
+
+`main.js` is Storybook's primary configuration file:
+
+```js
+// .storybook/main.js
+module.exports = {
+  stories: [
+    '../components/**/*.stories.mdx',
+    '../components/**/*.stories.@(js|jsx|ts|tsx)'
+  ],
+  addons: [
+    '@storybook/addon-a11y',
+    '@storybook/addon-essentials',
+    '@storybook/addon-links'
+  ]
+}
+```
+
+and `preview.js`, which provides additional configuration when previewing components. This is where we import TailwindCSS.
+
+```js
+// .storybook/preview.js
+import '../styles/index.css'
+
+export const parameters = {
+  actions: {argTypesRegex: '^on[A-Z].*'}
+}
+```
+
+### Stories
+
+Storybook is flexible, and you can configure it to look at any directory for stories. You'll often see them placed in a `/stories` directory. I've chosen to keep stories with their components, for example:
+
+```
+├── components
+│   ├── blocks
+│   │   ├── Alerts.js
+│   │   ├── Alerts.stories.js
+│   │   ├── Hero.js
+│   │   └── Hero.stories.js
+```
+
+In my experience, it's harder to forget to write or update a story-- if it's in the same directory as the component. If you want to move your stories to their own directory, make sure you update `main.js`
+
+## ♻️ Chromatic (optional)
+
+[View this starter on Chromatic](https://www.chromatic.com/library?appId=5f4fb61efe7d0c0022b750b7&branch=main).
+
+### About
+
+[Chromatic](https://www.chromatic.com) is a free, cloud-based tool-chain service made by the Storybook maintainers, which helps teams ship UI components faster. It comes with a powerful suite of testing tools, including:
+
+- Visual Regression Testing
+- Collaborative UI Review
+- Git Hosting Integration
+- Continuous Integration Workflows
+
+Learn more about publish to Chromatic by reading the [official docs](https://www.learnstorybook.com/design-systems-for-developers/react/en/review/) or by watching [this 3-minute video](https://youtu.be/9o6uB1X-LZ8).
+
+### Configuration
+
+This starter is configured with a Github Action workflow, which instructs Chromatic to run a full set of tests anytime there's a push to Github. The config file is located in `.github/workflows/chromatic.yml`:
+
+```yml
+name: 'Chromatic Deployment'
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: yarn
+      - uses: chromaui/action@v1
+        with:
+          projectToken: YOUR_TOKEN
+          token: ${{ secrets.GITHUB_TOKEN }}
+```
+
+To use Chromatic on your project, [sign up for a free account](https://www.chromatic.com/start) and replace `projectToken` with your own.
+
+---
+
 ## :octocat: Contributing
 
 I would love feedback contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls). 🍻
 
-## Credits
+## 🙌🏻 Credits
 
 Illustration by Maria Shukshina from <a href="https://icons8.com/">Icons8</a>
