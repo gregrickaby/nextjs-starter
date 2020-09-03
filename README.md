@@ -159,9 +159,9 @@ If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [ba
 
 #### Global
 
-Start by editing the [Global Config](#global-config) file. Values are automatically passed down as props to the [`<SiteHead>` component](https://github.com/gregrickaby/nextjs-starter/blob/main/components/SiteHead.js).
+Start by editing the [Global Config](#global-config) file. Values are automatically passed down as props to the [`<Meta>` component](https://github.com/gregrickaby/nextjs-starter/blob/main/components/global/Meta.js).
 
-The `<SiteHead>` component also contains the necessary tags for Facebook and Twitter.
+The `<Meta>` component also contains the necessary tags for both Facebook and Twitter.
 
 #### Page Level
 
