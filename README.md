@@ -243,7 +243,7 @@ Storybook v6 ships by default with a set of [essential addons](https://storybook
 
 In addition to the "essentials", I've also included both the [accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y) and [links](https://github.com/storybookjs/storybook/tree/master/addons/links) addons.
 
-Learn more by reading the [official docs](https://storybook.js.org/docs/react/get-started/introduction), and learn first hand by taking the [Learn Storybook](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/) course.
+Learn more by reading the [official docs](https://storybook.js.org/docs/react/get-started/introduction), and learn first hand by taking the [Learn Storybook course](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/).
 
 ### Configuration
 
@@ -266,7 +266,7 @@ module.exports = {
 }
 ```
 
-`preview.js` provides additional configuration when previewing components. (This is where you import TailwindCSS)
+`preview.js` provides additional configuration when previewing components inside Storybook:
 
 ```js
 // .storybook/preview.js
@@ -276,6 +276,8 @@ export const parameters = {
   actions: {argTypesRegex: '^on[A-Z].*'}
 }
 ```
+
+The config above will import the starter's CSS, so components will look like the front-end.
 
 ### Stories
 
@@ -291,6 +293,8 @@ Storybook is flexible, and you can configure it to search in any directory for s
 ```
 
 In my experience, it's harder to forget to write or update a story-- if it's located next to the component. If you want to move your stories to their own directory, make sure you update `main.js`.
+
+Learn more about [writing stories](https://storybook.js.org/docs/react/get-started/whats-a-story).
 
 ## ♻️ Chromatic (optional)
 
