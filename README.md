@@ -232,7 +232,7 @@ This starter comes bundled with [Storybook](https://storybook.js.org/). Storyboo
 
 Since Storybook v6, you can use both [Component Story Format](https://storybook.js.org/docs/react/api/csf) (CSF) v1 and the new v2 format for writing component examples [using args](https://storybook.js.org/docs/react/writing-stories/args).
 
-Storybook v6 ships by default with a set of [“essential” addons](https://storybook.js.org/docs/react/essentials/introduction) that add to the initial user experience:
+Storybook v6 ships by default with a set of [essential addons](https://storybook.js.org/docs/react/essentials/introduction) that add to the initial user experience:
 
 - [Actions](https://storybook.js.org/docs/react/essentials/actions)
 - [Backgrounds](https://storybook.js.org/docs/react/essentials/backgrounds)
@@ -241,13 +241,13 @@ Storybook v6 ships by default with a set of [“essential” addons](https://sto
 - [Toolbars & Globals](https://storybook.js.org/docs/react/essentials/toolbars-and-globals)
 - [Viewport](https://storybook.js.org/docs/react/essentials/viewport)
 
-In addition to the "essentials", I've also included both the [accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y) and links addon.
+In addition to the "essentials", I've also included both the [accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y) and [links](https://github.com/storybookjs/storybook/tree/master/addons/links) addons.
 
 Learn more by reading the [official docs](https://storybook.js.org/docs/react/get-started/introduction), and learn first hand by taking the [Learn Storybook](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/) course.
 
 ### Configuration
 
-The `.storybook` folder is where configuration files are placed.
+The `.storybook` folder is where configuration files are placed. There are two files:
 
 `main.js` is Storybook's primary configuration file:
 
@@ -266,7 +266,7 @@ module.exports = {
 }
 ```
 
-and `preview.js`, which provides additional configuration when previewing components. This is where we import TailwindCSS.
+`preview.js` provides additional configuration when previewing components. (This is where you import TailwindCSS)
 
 ```js
 // .storybook/preview.js
@@ -279,7 +279,7 @@ export const parameters = {
 
 ### Stories
 
-Storybook is flexible, and you can configure it to look at any directory for stories. You'll often see them placed in a `/stories` directory. I've chosen to keep stories with their components, for example:
+Storybook is flexible, and you can configure it to search in any directory for stories. You'll often see them placed in a `/stories` directory. I've chosen to keep stories with their components, for example:
 
 ```
 ├── components
@@ -290,7 +290,7 @@ Storybook is flexible, and you can configure it to look at any directory for sto
 │   │   └── Hero.stories.js
 ```
 
-In my experience, it's harder to forget to write or update a story-- if it's in the same directory as the component. If you want to move your stories to their own directory, make sure you update `main.js`
+In my experience, it's harder to forget to write or update a story-- if it's located next to the component. If you want to move your stories to their own directory, make sure you update `main.js`.
 
 ## ♻️ Chromatic (optional)
 
@@ -298,14 +298,14 @@ In my experience, it's harder to forget to write or update a story-- if it's in 
 
 ### About
 
-[Chromatic](https://www.chromatic.com) is a free, cloud-based tool-chain service made by the Storybook maintainers, which helps teams ship UI components faster. It comes with a powerful suite of testing tools, including:
+[Chromatic](https://www.chromatic.com) is a free, cloud-based tool-chain (made by the Storybook maintainers), which helps teams ship UI components faster. It comes with a powerful suite of testing tools including:
 
 - Visual Regression Testing
 - Collaborative UI Review
 - Git Hosting Integration
 - Continuous Integration Workflows
 
-Learn more about publish to Chromatic by reading the [official docs](https://www.learnstorybook.com/design-systems-for-developers/react/en/review/) or by watching [this 3-minute video](https://youtu.be/9o6uB1X-LZ8).
+Learn more about publishing to Chromatic by reading the [official docs](https://www.learnstorybook.com/design-systems-for-developers/react/en/review/) or by watching [this 3-minute video](https://youtu.be/9o6uB1X-LZ8).
 
 ### Configuration
 
