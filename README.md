@@ -309,7 +309,7 @@ Learn more about [writing stories](https://storybook.js.org/docs/react/get-start
 - Git Hosting Integration
 - Continuous Integration Workflows
 
-Learn more about publishing to Chromatic by reading the [official docs](https://www.learnstorybook.com/design-systems-for-developers/react/en/review/) or by watching [this 3-minute video](https://youtu.be/9o6uB1X-LZ8).
+Learn more about publishing to Chromatic by reading the [official docs](https://www.learnstorybook.com/design-systems-for-developers/react/en/review/) or watching [this 3-minute video](https://youtu.be/9o6uB1X-LZ8).
 
 ### Configuration
 
