@@ -1,10 +1,10 @@
 import React, {ReactElement} from 'react'
 import {GetStaticProps} from 'next'
-import Layout from '@/components/global/Layout'
-import {fetcher} from '@/lib/functions'
 import Link from 'next/link'
-import {Info} from '@/components/blocks/Alerts'
 import {Post} from '@/interfaces/index'
+import {fetcher} from '@/lib/functions'
+import Layout from '@/components/templates/Layout'
+import {Info} from '@/components/organisms/Alerts'
 
 type Props = {
   data: []

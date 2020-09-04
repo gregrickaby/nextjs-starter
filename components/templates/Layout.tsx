@@ -1,6 +1,7 @@
-import Meta from './Meta'
-import Header from './Header'
-import Footer from './Footer'
+import React from 'react'
+import Meta from '@/components/organisms/Meta'
+import Header from '@/components/organisms/Header'
+import Footer from '@/components/organisms/Footer'
 import config from '@/lib/config'
 
 type LayoutProps = {

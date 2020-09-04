@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState, ReactElement} from 'react'
 import Link from 'next/link'
 import config from '@/lib/config'
 import Hamburger from 'hamburger-react'
@@ -6,13 +6,15 @@ import Hamburger from 'hamburger-react'
 const Links: React.FC = () => {
   return (
     <>
-      {config.navigation.map((item, index) => (
-        <Link href={item.href} key={index}>
-          <a className="ml-8 transition-colors duration-200 ease-in-out hover:text-gray-600">
-            {item.label}
-          </a>
-        </Link>
-      ))}
+      {config.navigation.map(
+        (item, index): ReactElement => (
+          <Link href={item.href} key={index}>
+            <a className="ml-8 transition-colors duration-200 ease-in-out hover:text-gray-600">
+              {item.label}
+            </a>
+          </Link>
+        )
+      )}
     </>
   )
 }

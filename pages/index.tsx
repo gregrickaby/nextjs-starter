@@ -1,6 +1,7 @@
+import React from 'react'
 import config from '@/lib/config'
-import Layout from '@/components/global/Layout'
-import Hero from '@/components/blocks/Hero'
+import Layout from '@/components/templates/Layout'
+import Hero from '@/components/organisms/Hero'
 
 const HomePage: React.FC = () => {
   return (
