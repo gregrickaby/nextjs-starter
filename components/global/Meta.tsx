@@ -1,6 +1,5 @@
 import config from '@/lib/config'
 import Head from 'next/head'
-import PropTypes from 'prop-types'
 
 export default function Meta(props) {
   return (
@@ -53,14 +52,4 @@ export default function Meta(props) {
       />
     </Head>
   )
-}
-
-Meta.defaultProps = {
-  title: config.siteName,
-  description: config.siteDescription
-}
-
-Meta.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string
 }

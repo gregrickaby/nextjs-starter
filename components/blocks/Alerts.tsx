@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 export function Info({children}) {
   return (
@@ -29,12 +28,4 @@ export function Warning({children}) {
       <p>{children}</p>
     </div>
   )
-}
-
-Info.propTypes = {
-  children: PropTypes.object.isRequired
-}
-
-Warning.propTypes = {
-  children: PropTypes.object.isRequired
 }

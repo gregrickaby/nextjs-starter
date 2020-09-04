@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import Layout from '@/components/global/Layout'
 import {fetcher} from '@/lib/functions'
 import {Info} from '@/components/blocks/Alerts'
@@ -46,8 +45,4 @@ export async function getStaticProps({params}) {
   )
 
   return {props: {post}}
-}
-
-BlogPost.propTypes = {
-  post: PropTypes.object
 }

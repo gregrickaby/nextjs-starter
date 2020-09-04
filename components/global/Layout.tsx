@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import Meta from './Meta'
 import Header from './Header'
 import Footer from './Footer'
@@ -13,15 +12,4 @@ export default function Layout({children, ...props}) {
       <Footer />
     </>
   )
-}
-
-Layout.defaultProps = {
-  description: config.siteDescription,
-  title: config.siteName
-}
-
-Layout.propTypes = {
-  children: PropTypes.array.isRequired,
-  description: PropTypes.string,
-  title: PropTypes.string
 }

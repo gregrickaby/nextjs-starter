@@ -1,22 +1,21 @@
-import PropTypes from 'prop-types'
 import Layout from '@/components/global/Layout'
 import {fetcher} from '@/lib/functions'
 import Link from 'next/link'
 import {Info} from '@/components/blocks/Alerts'
 
-export default function IncrementalStaticRegeneration(props) {
+export default function ServerSideRendering(props) {
   return (
     <Layout
-      title="Incremental Static Regeneration (ISR)"
-      description="A static page that updates in the background every 60 seconds."
+      title="Server-side Rendering (SSR)"
+      description="A server-side rendered page with data from a REST-API."
     >
       <div className="container">
-        <h1>Incremental Static Regeneration (ISR) Example</h1>
+        <h1>Server-side Rendering (SSR) Example</h1>
 
         <Info>
           The content below is sourced from the WordPress REST-API.{' '}
-          <a href="https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration">
-            Learn more about ISR.
+          <a href="https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering">
+            Learn more about SSR.
           </a>
         </Info>
 
@@ -42,11 +41,7 @@ export default function IncrementalStaticRegeneration(props) {
  *
  * @see https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
  */
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await fetcher('https://nextjs.wpengine.com/wp-json/wp/v2/posts')
-  return {props: {data}, revalidate: 60}
-}
-
-IncrementalStaticRegeneration.propTypes = {
-  data: PropTypes.object
+  return {props: {data}}
 }

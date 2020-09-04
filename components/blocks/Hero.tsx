@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 export default function Hero(props) {
   return (
@@ -17,10 +16,4 @@ export default function Hero(props) {
       </div>
     </section>
   )
-}
-
-Hero.propTypes = {
-  background: PropTypes.string,
-  description: PropTypes.string,
-  title: PropTypes.string
 }
