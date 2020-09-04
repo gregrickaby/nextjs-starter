@@ -1,16 +1,14 @@
-import config from '@/lib/config'
+import React from 'react'
 import Head from 'next/head'
 
 type Props = {
-  children: React.ReactNode
-} & typeof defaultProps
-
-const defaultProps = {
-  title: config.siteName,
-  description: config.siteDescription
+  author?: string
+  title?: string
+  description?: string
+  siteUrl?: string
 }
 
-export default function Meta(props: Props) {
+const Meta: React.FC<Props> = (props: Props) => {
   return (
     <Head>
       <title>
@@ -42,23 +40,25 @@ export default function Meta(props: Props) {
       <link rel="manifest" href="/favicon/site.webmanifest" />
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:url" content={config.siteUrl} />
+      <meta name="twitter:url" content={props.siteUrl} />
       <meta name="twitter:title" content={props.title} />
       <meta name="twitter:description" content={props.description} />
       <meta
         name="twitter:image"
-        content={`${config.siteUrl}/favicon/android-icon-192x192.png`}
+        content={`${props.siteUrl}/favicon/android-icon-192x192.png`}
       />
-      <meta name="twitter:creator" content={config.author} />
+      <meta name="twitter:creator" content={props.author} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={props.title} />
       <meta property="og:description" content={props.description} />
       <meta property="og:site_name" content={props.title} />
-      <meta property="og:url" content={config.siteUrl} />
+      <meta property="og:url" content={props.siteUrl} />
       <meta
         property="og:image"
-        content={`${config.siteUrl}/favicon/apple-icon.png`}
+        content={`${props.siteUrl}/favicon/apple-icon.png`}
       />
     </Head>
   )
 }
+
+export default Meta

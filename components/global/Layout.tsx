@@ -3,22 +3,34 @@ import Header from './Header'
 import Footer from './Footer'
 import config from '@/lib/config'
 
-type Props = {
-  children: React.ReactNode
-} & typeof defaultProps
-
-const defaultProps = {
-  title: config.siteName,
-  description: config.siteDescription
+type LayoutProps = {
+  children: React.ReactElement
+  author?: string
+  title?: string
+  description?: string
+  siteUrl?: string
 }
 
-export default function Layout({children, ...props}: Props) {
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  author = config.author,
+  title = config.siteName,
+  description = config.siteDescription,
+  siteUrl = config.siteUrl
+}: LayoutProps) => {
   return (
     <>
-      <Meta title={props.title} description={props.description} />
+      <Meta
+        author={author}
+        title={title}
+        description={description}
+        siteUrl={siteUrl}
+      />
       <Header />
       <main>{children}</main>
       <Footer />
     </>
   )
 }
+
+export default Layout

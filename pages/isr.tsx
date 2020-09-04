@@ -10,7 +10,7 @@ type Props = {
   data: Record<string, unknown>
 }
 
-export default function ISR({data}: Props) {
+const ISR: React.FC<Props> = ({data}: Props) => {
   return (
     <Layout
       title="Incremental Static Regeneration (ISR)"
@@ -42,6 +42,8 @@ export default function ISR({data}: Props) {
     </Layout>
   )
 }
+
+export default ISR
 
 /**
  * At build time, fetch the REST-API data, pass the data in via props.

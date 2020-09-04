@@ -6,7 +6,7 @@ type Props = {
   background: string
 }
 
-export default function Hero(props: Props) {
+const Hero: React.FC<Props> = (props: Props) => {
   return (
     <section className="relative overflow-hidden">
       <div className="container relative z-10 p-24 lg:p-64">
@@ -23,3 +23,5 @@ export default function Hero(props: Props) {
     </section>
   )
 }
+
+export default Hero

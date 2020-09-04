@@ -2,7 +2,7 @@ import config from '@/lib/config'
 import Layout from '@/components/global/Layout'
 import Hero from '@/components/blocks/Hero'
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
   return (
     <Layout title={config.siteName} description={config.siteDescription}>
       <Hero
@@ -13,3 +13,5 @@ export default function HomePage() {
     </Layout>
   )
 }
+
+export default HomePage

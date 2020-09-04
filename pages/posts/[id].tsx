@@ -9,7 +9,7 @@ interface Posts extends Post {
   post: Post
 }
 
-export default function BlogPost({post}: Posts) {
+const BlogPost: React.FC<Posts> = ({post}: Posts) => {
   return (
     <Layout title={post.title.rendered} description={post.excerpt.rendered}>
       <div className="container">
@@ -30,6 +30,8 @@ export default function BlogPost({post}: Posts) {
     </Layout>
   )
 }
+
+export default BlogPost
 
 /**
  * At build time, define a list of paths to be rendered.

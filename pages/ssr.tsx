@@ -10,7 +10,7 @@ type Props = {
   data: Record<string, unknown>
 }
 
-export default function SSR({data}: Props) {
+const SSR: React.FC<Props> = ({data}: Props) => {
   return (
     <Layout
       title="Server-side Rendering (SSR)"
@@ -42,6 +42,8 @@ export default function SSR({data}: Props) {
     </Layout>
   )
 }
+
+export default SSR
 
 /**
  * At build time, fetch the REST-API data, pass the data in via props.

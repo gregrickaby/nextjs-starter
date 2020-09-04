@@ -10,7 +10,7 @@ type Props = {
   data: Record<string, unknown>
 }
 
-export default function SSG({data}: Props) {
+const SSG: React.FC<Props> = ({data}: Props) => {
   return (
     <Layout
       title="Static Generation (SSG)"
@@ -42,6 +42,8 @@ export default function SSG({data}: Props) {
     </Layout>
   )
 }
+
+export default SSG
 
 /**
  * At build time, fetch the REST-API data, pass the data in via props.

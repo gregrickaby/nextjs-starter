@@ -3,7 +3,7 @@ import Link from 'next/link'
 import config from '@/lib/config'
 import Hamburger from 'hamburger-react'
 
-function Links() {
+const Links: React.FC = () => {
   return (
     <>
       {config.navigation.map((item, index) => (
@@ -17,7 +17,7 @@ function Links() {
   )
 }
 
-function Drawer() {
+const Drawer: React.FC = () => {
   return (
     <div className="absolute w-56 h-screen py-12 px-4 top-0 right-0 flex flex-col bg-white shadow-md">
       <Links />
@@ -25,7 +25,7 @@ function Drawer() {
   )
 }
 
-export default function Navigation() {
+const Navigation: React.FC = () => {
   const [isOpen, setOpen] = useState(false)
   return (
     <nav className="flex items-center justify-between">
@@ -39,3 +39,5 @@ export default function Navigation() {
     </nav>
   )
 }
+
+export default Navigation
