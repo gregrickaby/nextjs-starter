@@ -1,7 +1,7 @@
 import Layout from '@/components/global/Layout'
 import {Info} from '@/components/blocks/Alerts'
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <Layout title="About" description="Learn more about this website">
       <div className="container">
@@ -41,3 +41,5 @@ export default function About() {
     </Layout>
   )
 }
+
+export default About

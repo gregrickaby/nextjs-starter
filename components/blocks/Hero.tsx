@@ -1,7 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-export default function Hero(props) {
+type Props = {
+  title: string
+  description: string
+  background: string
+}
+
+const Hero: React.FC<Props> = (props: Props) => {
   return (
     <section className="relative overflow-hidden">
       <div className="container relative z-10 p-24 lg:p-64">
@@ -19,8 +24,4 @@ export default function Hero(props) {
   )
 }
 
-Hero.propTypes = {
-  background: PropTypes.string,
-  description: PropTypes.string,
-  title: PropTypes.string
-}
+export default Hero

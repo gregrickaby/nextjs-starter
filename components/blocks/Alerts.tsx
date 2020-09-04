@@ -1,7 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-export function Info({children}) {
+type Props = {
+  children: React.ReactNode
+}
+
+export const Info: React.FC<Props> = ({children}: Props) => {
   return (
     <div
       className="flex items-center bg-blue-500 text-white px-4 mb-8 rounded shadow"
@@ -19,7 +22,7 @@ export function Info({children}) {
   )
 }
 
-export function Warning({children}) {
+export const Warning: React.FC<Props> = ({children}: Props) => {
   return (
     <div
       className="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4"
@@ -29,12 +32,4 @@ export function Warning({children}) {
       <p>{children}</p>
     </div>
   )
-}
-
-Info.propTypes = {
-  children: PropTypes.object.isRequired
-}
-
-Warning.propTypes = {
-  children: PropTypes.object.isRequired
 }

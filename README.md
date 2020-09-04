@@ -17,6 +17,7 @@ https://the-nextjs-starter.vercel.app/
 
 ✨ **Behold...The Features** ✨
 
+- [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com)
 - [Storybook](https://storybook.js.org)
 - [Chromatic](https://www.chromatic.com)
@@ -24,7 +25,6 @@ https://the-nextjs-starter.vercel.app/
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
-- Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 - [Vercel](https://vercel.com/) hosting ready
 - Minimal styles
 - Global config file
@@ -36,7 +36,7 @@ https://the-nextjs-starter.vercel.app/
 ## 🗂 Table of Contents <!-- omit in toc -->
 
 - [🚀 Install](#-install)
-- [🔧 Setup](#-setup)
+- [🔧 Setup Documentation](#-setup-documentation)
   - [Global Config](#global-config)
   - [Styles](#styles)
     - [TailwindCSS](#tailwindcss)
@@ -47,6 +47,7 @@ https://the-nextjs-starter.vercel.app/
     - [Page Level](#page-level)
   - [Hosting at Vercel (optional)](#hosting-at-vercel-optional)
   - [Progressive Web App (optional)](#progressive-web-app-optional)
+- [📝 TypeScript](#-typescript)
 - [📚 Storybook (optional)](#-storybook-optional)
   - [About](#about)
   - [Configuration](#configuration)
@@ -89,7 +90,7 @@ yarn start
 
 ---
 
-## 🔧 Setup
+## 🔧 Setup Documentation
 
 ### Global Config
 
@@ -219,6 +220,23 @@ module.exports = withPWA({
   }
 })
 ```
+
+---
+
+## 📝 TypeScript
+
+This starter has full support for [TypeScript](https://www.typescriptlang.org/), including integration with both ESLint and Prettier.
+
+**I realize that TypeScript is a barrier to entry for some**, so here are several resources that I found helpful:
+
+- [YouTube: TypeScript Course for Beginners 2020](https://www.youtube.com/watch?v=BwuLxPH8IDs) (by Academind)
+- https://www.typescriptlang.org/docs
+- https://nextjs.org/docs/basic-features/typescript
+- https://github.com/vercel/next.js/tree/master/examples/with-typescript
+- https://react-typescript-cheatsheet.netlify.app/
+- https://github.com/laststance/create-react-app-typescript-todo-example-2020
+- https://github.com/typescript-eslint/typescript-eslint
+- https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
 
 ---
 

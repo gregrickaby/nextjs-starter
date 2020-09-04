@@ -2,9 +2,9 @@ import config from '@/lib/config'
 import Layout from '@/components/global/Layout'
 import Hero from '@/components/blocks/Hero'
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
   return (
-    <Layout title={config.siteTitle} description={config.siteDescription}>
+    <Layout title={config.siteName} description={config.siteDescription}>
       <Hero
         background="https://images.unsplash.com/photo-1513106021000-168e5f56609d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2560&q=70"
         title="Next.js Starter"
@@ -13,3 +13,5 @@ export default function HomePage() {
     </Layout>
   )
 }
+
+export default HomePage

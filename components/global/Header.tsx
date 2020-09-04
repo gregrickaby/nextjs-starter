@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {shrinkHeader} from '@/lib/functions'
 import Navigation from './Navigation'
 
-function Logo() {
+const Logo: React.FC = () => {
   return (
     <Link href="/">
       <a>
@@ -19,7 +19,7 @@ function Logo() {
   )
 }
 
-export default function Header() {
+const Header: React.FC = () => {
   const headerRef = useRef(null)
   useEffect(() => {
     shrinkHeader(headerRef)
@@ -36,3 +36,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header

@@ -1,35 +1,48 @@
 module.exports = {
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    ecmaVersion: 9,
-    sourceType: 'module'
-  },
+  root: true,
   env: {
-    node: true,
-    es6: true
+    es6: true,
+    node: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/recommended',
-    'prettier'
-  ],
   settings: {
     react: {
       version: 'detect'
     }
   },
-  plugins: ['react', 'react-hooks', 'jsx-a11y', 'prettier'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 9,
+    ecmaFeatures: {
+      jsx: true
+    }
+  },
+  plugins: [
+    '@typescript-eslint',
+    'react',
+    'react-hooks',
+    'jsx-a11y',
+    'prettier'
+  ],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+    'prettier',
+    'prettier/react',
+    'prettier/@typescript-eslint'
+  ],
   rules: {
     'jsx-a11y/anchor-is-valid': 'off',
     'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
       }
     ],
     'prettier/prettier': 'error'

@@ -1,10 +1,16 @@
-import PropTypes from 'prop-types'
+import React, {ReactElement} from 'react'
+import {GetStaticProps} from 'next'
 import Layout from '@/components/global/Layout'
 import {fetcher} from '@/lib/functions'
 import Link from 'next/link'
 import {Info} from '@/components/blocks/Alerts'
+import {Post} from '@/interfaces/index'
 
-export default function IncrementalStaticRegeneration(props) {
+type Props = {
+  data: []
+}
+
+const ISR: React.FC<Props> = ({data}: Props) => {
   return (
     <Layout
       title="Incremental Static Regeneration (ISR)"
@@ -21,32 +27,36 @@ export default function IncrementalStaticRegeneration(props) {
         </Info>
 
         <section>
-          {props.data.map((post, index) => (
-            <article key={index}>
-              <h1>
-                <Link href={`/posts/${post.id}`}>
-                  <a dangerouslySetInnerHTML={{__html: post.title.rendered}} />
-                </Link>
-              </h1>
-              <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
-            </article>
-          ))}
+          {data.map(
+            (post: Post, index: number): ReactElement => (
+              <article key={index}>
+                <h1>
+                  <Link href={`/posts/${post.id}`}>
+                    <a
+                      dangerouslySetInnerHTML={{__html: post.title.rendered}}
+                    />
+                  </Link>
+                </h1>
+                <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
+              </article>
+            )
+          )}
         </section>
       </div>
     </Layout>
   )
 }
 
+export default ISR
+
 /**
  * At build time, fetch the REST-API data, pass the data in via props.
  *
  * @see https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
  */
-export async function getStaticProps() {
-  const data = await fetcher('https://nextjs.wpengine.com/wp-json/wp/v2/posts')
+export const getStaticProps: GetStaticProps = async () => {
+  const data: Record<string, unknown> = await fetcher(
+    'https://nextjs.wpengine.com/wp-json/wp/v2/posts'
+  )
   return {props: {data}, revalidate: 60}
-}
-
-IncrementalStaticRegeneration.propTypes = {
-  data: PropTypes.object
 }
