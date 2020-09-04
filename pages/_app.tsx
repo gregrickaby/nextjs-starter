@@ -8,7 +8,7 @@ import '@/styles/index.css'
  *
  * @see https://nextjs.org/blog/next-9-4#integrated-web-vitals-reporting
  */
-export function reportWebVitals(metric) {
+export function reportWebVitals(metric: Record<string, unknown>) {
   console.log(metric)
 }
 

@@ -1,7 +1,16 @@
 import config from '@/lib/config'
 import Head from 'next/head'
 
-export default function Meta(props) {
+type Props = {
+  children: React.ReactNode
+} & typeof defaultProps
+
+const defaultProps = {
+  title: config.siteName,
+  description: config.siteDescription
+}
+
+export default function Meta(props: Props) {
   return (
     <Head>
       <title>

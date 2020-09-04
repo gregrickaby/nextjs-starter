@@ -1,6 +1,12 @@
 import React from 'react'
 
-export default function Hero(props) {
+type Props = {
+  title: string
+  description: string
+  background: string
+}
+
+export default function Hero(props: Props) {
   return (
     <section className="relative overflow-hidden">
       <div className="container relative z-10 p-24 lg:p-64">

@@ -3,7 +3,16 @@ import Header from './Header'
 import Footer from './Footer'
 import config from '@/lib/config'
 
-export default function Layout({children, ...props}) {
+type Props = {
+  children: React.ReactNode
+} & typeof defaultProps
+
+const defaultProps = {
+  title: config.siteName,
+  description: config.siteDescription
+}
+
+export default function Layout({children, ...props}: Props) {
   return (
     <>
       <Meta title={props.title} description={props.description} />

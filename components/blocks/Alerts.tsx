@@ -1,6 +1,10 @@
 import React from 'react'
 
-export function Info({children}) {
+type Props = {
+  children: React.ReactNode
+}
+
+export function Info({children}: Props) {
   return (
     <div
       className="flex items-center bg-blue-500 text-white px-4 mb-8 rounded shadow"
@@ -18,7 +22,7 @@ export function Info({children}) {
   )
 }
 
-export function Warning({children}) {
+export function Warning({children}: Props) {
   return (
     <div
       className="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4"
