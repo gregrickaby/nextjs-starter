@@ -10,9 +10,7 @@ type Props = {
   data: Record<string, unknown>
 }
 
-export default function IncrementalStaticRegeneration({
-  data
-}: Props): JSX.Element {
+export default function ISR({data}: Props) {
   return (
     <Layout
       title="Incremental Static Regeneration (ISR)"

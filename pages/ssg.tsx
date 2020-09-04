@@ -1,9 +1,16 @@
+import React from 'react'
+import {GetStaticProps} from 'next'
 import Layout from '@/components/global/Layout'
 import {fetcher} from '@/lib/functions'
 import Link from 'next/link'
 import {Info} from '@/components/blocks/Alerts'
+import {Post} from '@/interfaces/index'
 
-export default function StaticGeneration(props) {
+type Props = {
+  data: Record<string, unknown>
+}
+
+export default function SSG({data}: Props) {
   return (
     <Layout
       title="Static Generation (SSG)"
@@ -20,7 +27,7 @@ export default function StaticGeneration(props) {
         </Info>
 
         <section>
-          {props.data.map((post, index) => (
+          {data.map((post: Post, index: number) => (
             <article key={index}>
               <h1>
                 <Link href={`/posts/${post.id}`}>
@@ -41,7 +48,9 @@ export default function StaticGeneration(props) {
  *
  * @see https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
  */
-export async function getStaticProps() {
-  const data = await fetcher('https://nextjs.wpengine.com/wp-json/wp/v2/posts')
+export const getStaticProps: GetStaticProps = async () => {
+  const data: Record<string, unknown> = await fetcher(
+    'https://nextjs.wpengine.com/wp-json/wp/v2/posts'
+  )
   return {props: {data}}
 }
