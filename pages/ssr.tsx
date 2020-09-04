@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {ReactElement} from 'react'
 import {GetServerSideProps} from 'next'
 import Layout from '@/components/global/Layout'
 import {fetcher} from '@/lib/functions'
@@ -7,7 +7,7 @@ import {Info} from '@/components/blocks/Alerts'
 import {Post} from '@/interfaces/index'
 
 type Props = {
-  data: Record<string, unknown>
+  data: []
 }
 
 const SSR: React.FC<Props> = ({data}: Props) => {
@@ -27,16 +27,20 @@ const SSR: React.FC<Props> = ({data}: Props) => {
         </Info>
 
         <section>
-          {data.map((post: Post, index: number) => (
-            <article key={index}>
-              <h1>
-                <Link href={`/posts/${post.id}`}>
-                  <a dangerouslySetInnerHTML={{__html: post.title.rendered}} />
-                </Link>
-              </h1>
-              <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
-            </article>
-          ))}
+          {data.map(
+            (post: Post, index: number): ReactElement => (
+              <article key={index}>
+                <h1>
+                  <Link href={`/posts/${post.id}`}>
+                    <a
+                      dangerouslySetInnerHTML={{__html: post.title.rendered}}
+                    />
+                  </Link>
+                </h1>
+                <p dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
+              </article>
+            )
+          )}
         </section>
       </div>
     </Layout>
