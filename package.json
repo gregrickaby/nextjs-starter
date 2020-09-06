@@ -17,6 +17,7 @@
     "node": ">=10"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "hamburger-react": "^2.2.0",
     "next": "next@canary",
     "react": "16.13.1",
