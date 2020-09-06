@@ -4,7 +4,7 @@ import Link from 'next/link'
 import {Post} from '@/interfaces/index'
 import {fetcher} from '@/lib/functions'
 import Layout from '@/components/common/Layout'
-import {Info} from '@/components/organisms/Alert/Alert'
+import {Info} from '@/components/organisms/Alert'
 
 type Props = {
   data: []

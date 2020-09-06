@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '.'
+import Button from './Input'
 
 /**
  * The following is a story.

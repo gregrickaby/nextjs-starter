@@ -2,7 +2,7 @@ import React from 'react'
 import {GetStaticPaths, GetStaticProps} from 'next'
 import Layout from '@/components/common/Layout'
 import {fetcher} from '@/lib/functions'
-import {Info} from '@/components/organisms/Alert/Alert'
+import {Info} from '@/components/organisms/Alert'
 import {Post} from '@/interfaces/index'
 
 interface Posts extends Post {

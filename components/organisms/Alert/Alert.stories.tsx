@@ -1,5 +1,5 @@
 import React from 'react'
-import {Info, Warning} from './Alert'
+import {Info, Warning} from '.'
 
 /**
  * The following is a story.
