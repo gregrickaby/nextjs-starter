@@ -3,8 +3,8 @@ import {GetServerSideProps} from 'next'
 import Link from 'next/link'
 import {Post} from '@/interfaces/index'
 import {fetcher} from '@/lib/functions'
-import Layout from '@/components/templates/Layout'
-import {Info} from '@/components/organisms/Alerts'
+import Layout from '@/components/common/Layout'
+import {Info} from '@/components/organisms/Alert/Alert'
 
 type Props = {
   data: []

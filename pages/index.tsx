@@ -1,7 +1,7 @@
 import React from 'react'
 import config from '@/lib/config'
-import Layout from '@/components/templates/Layout'
-import Hero from '@/components/organisms/Hero'
+import Layout from '@/components/common/Layout'
+import Hero from '@/components/organisms/Hero/Hero'
 
 const HomePage: React.FC = () => {
   return (

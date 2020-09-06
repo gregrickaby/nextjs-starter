@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '@/components/templates/Layout'
-import {Info} from '@/components/organisms/Alerts'
+import Layout from '@/components/common/Layout'
+import {Info} from '@/components/organisms/Alert/Alert'
 
 const About: React.FC = () => {
   return (
