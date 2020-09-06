@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button} from '@/components/atoms/Button'
 
 type Props = {
   title: string
@@ -14,7 +15,7 @@ const Hero: React.FC<Props> = (props: Props) => {
           {props.title}
         </h2>
         <p className="text-base text-gray-700 sm:text-lg md:text-xl">
-          {props.description}
+          {props.description} <Button isDisabled={false} content="Learn More" />
         </p>
       </div>
       <div className="absolute top-0 z-0">
