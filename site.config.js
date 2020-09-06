@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   siteName: 'Site Name',
   siteDescription: 'The description of this website',
   siteUrl: 'https://website.vercel.app',
@@ -21,5 +21,3 @@ const config = {
     }
   }
 }
-
-export default config

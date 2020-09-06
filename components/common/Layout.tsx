@@ -2,7 +2,7 @@ import React from 'react'
 import Meta from '@/components/common/Meta'
 import Header from '@/components/organisms/Header/Header'
 import Footer from '@/components/organisms/Footer/Footer'
-import config from '@/lib/config'
+import SiteConfig from 'site.config'
 
 type LayoutProps = {
   children: React.ReactElement
@@ -14,10 +14,10 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({
   children,
-  author = config.author,
-  title = config.siteName,
-  description = config.siteDescription,
-  siteUrl = config.siteUrl
+  author = SiteConfig.author,
+  title = SiteConfig.siteName,
+  description = SiteConfig.siteDescription,
+  siteUrl = SiteConfig.siteUrl
 }: LayoutProps) => {
   return (
     <>
