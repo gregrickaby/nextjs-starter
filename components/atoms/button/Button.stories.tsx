@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './index'
+import {Button} from './index'
 
 /**
  * The following is a story.
@@ -18,7 +18,7 @@ export default {
   component: Button,
   decorators: [
     (Story) => (
-      <div className="p-10">
+      <div className="flex justify-center">
         <Story />
       </div>
     )
@@ -26,17 +26,18 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'The default button.'
+        component: 'The primary button.'
       }
     }
   }
 }
 
+// @ts-ignore
 const Template = (args: Record<string, unknown>) => <Button {...args} />
 
-export const Default = Template.bind({})
+export const Primary = Template.bind({})
 
-Default.args = {
-  text: 'Learn More',
-  url: '/#'
+Primary.args = {
+  isDisabled: false,
+  content: 'Learn More'
 }

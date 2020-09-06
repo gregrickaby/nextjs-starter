@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import cn from 'classnames'
 
-interface LinkButton {
+export interface LinkButton {
   /**
    * Required. The button text.
    */
@@ -32,14 +32,14 @@ export const LinkButton: React.FC<LinkButton> = ({
   )
 }
 
-interface ButtonProps {
+export interface ButtonProps {
   /**
-   * Checks if the button should be disabled.
+   * Required. Checks if the button should be disabled.
    */
   isDisabled: boolean
   /**
-  The display content of the button.
-  */
+   * Required. The display content of the button.
+   */
   content: string
   /**
    * Optional. Additional CSS classes.
@@ -47,9 +47,9 @@ interface ButtonProps {
   classes?: string
 }
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   isDisabled = false,
-  content,
+  content = 'Learn More',
   classes
 }: ButtonProps) => {
   return (
@@ -62,5 +62,3 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   )
 }
-
-export default Button
