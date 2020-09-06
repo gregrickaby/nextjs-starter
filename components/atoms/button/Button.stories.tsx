@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '.'
+import Button from './index'
 
 /**
  * The following is a story.
@@ -14,8 +14,22 @@ import Button from '.'
  */
 
 export default {
-  title: 'Components/Atoms/Button',
-  component: Button
+  title: 'Design System/Atoms/Button',
+  component: Button,
+  decorators: [
+    (Story) => (
+      <div className="p-10">
+        <Story />
+      </div>
+    )
+  ],
+  parameters: {
+    docs: {
+      description: {
+        component: 'The default button.'
+      }
+    }
+  }
 }
 
 const Template = (args: Record<string, unknown>) => <Button {...args} />
