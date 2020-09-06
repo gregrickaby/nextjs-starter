@@ -94,7 +94,7 @@ yarn start
 
 ### Global Config
 
-The global config file `lib/config.js` contains several constants used throughout this starter. Adjust to meet your needs:
+The global config file `site.config.js` contains several constants used throughout this starter. Adjust to meet your needs:
 
 ```js
 // lib/config.js
