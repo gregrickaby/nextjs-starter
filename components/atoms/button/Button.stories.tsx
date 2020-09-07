@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button} from './index'
+import Button from './index'
 
 /**
  * The following is a story.
@@ -16,13 +16,6 @@ import {Button} from './index'
 export default {
   title: 'Design System/Atoms/Button',
   component: Button,
-  decorators: [
-    (Story) => (
-      <div className="m-10">
-        <Story />
-      </div>
-    )
-  ],
   parameters: {
     docs: {
       description: {
@@ -39,5 +32,5 @@ export const Primary = Template.bind({})
 
 Primary.args = {
   isDisabled: false,
-  content: 'Learn More'
+  text: 'Learn More'
 }

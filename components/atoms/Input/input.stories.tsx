@@ -1,5 +1,5 @@
 import React from 'react'
-import {Input} from './index'
+import Input from './index'
 
 /**
  * The following is a story.
@@ -16,13 +16,6 @@ import {Input} from './index'
 export default {
   title: 'Design System/Atoms/Input',
   component: Input,
-  decorators: [
-    (Story) => (
-      <div className="m-10">
-        <Story />
-      </div>
-    )
-  ],
   parameters: {
     docs: {
       description: {

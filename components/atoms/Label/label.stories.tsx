@@ -1,6 +1,6 @@
 import React from 'react'
-import {Label} from './index'
-import {Input} from '../Input'
+import Label from './index'
+import Input from '../Input'
 
 /**
  * The following is a story.
@@ -17,13 +17,6 @@ import {Input} from '../Input'
 export default {
   title: 'Design System/Atoms/Label',
   component: Label,
-  decorators: [
-    (Story) => (
-      <div className="m-10">
-        <Story />
-      </div>
-    )
-  ],
   parameters: {
     docs: {
       description: {
