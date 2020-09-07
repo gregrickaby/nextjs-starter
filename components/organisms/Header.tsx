@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react'
-import {shrinkHeader} from '@/lib/functions'
-import Navigation from '@/components/molecules/Navigation'
-import Logo from '@/components/molecules/Logo'
+import Navigation from '../../components/molecules/Navigation'
+import Logo from '../../components/molecules/Logo'
+import {shrinkHeader} from '../../lib/functions'
 
 const Header: React.FC = () => {
   const headerRef = useRef(null)
