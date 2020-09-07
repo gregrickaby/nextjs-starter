@@ -1,16 +1,17 @@
+import React from 'react'
 import type {AppProps} from 'next/app'
 import '@/styles/index.css'
 
 /**
- * Support for Core Web Vitals.
+ * Core Web Vitals Reporting.
  *
- * Note: Delete this if you're not interested in using CWV.
+ * Uncomment if interested in seeing the data in the console.
  *
  * @see https://nextjs.org/blog/next-9-4#integrated-web-vitals-reporting
  */
-export function reportWebVitals(metric: Record<string, unknown>) {
-  console.log(metric)
-}
+// export function reportWebVitals(metric: Record<string, unknown>) {
+//   console.log(metric)
+// }
 
 export default function App({Component, pageProps}: AppProps) {
   return <Component {...pageProps} />

@@ -1,14 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
 
-type Props = {
+export interface MetaProps {
   author?: string
   title?: string
   description?: string
   siteUrl?: string
 }
 
-const Meta: React.FC<Props> = (props: Props) => {
+const Meta: React.FC<MetaProps> = (props: MetaProps) => {
   return (
     <Head>
       <title>

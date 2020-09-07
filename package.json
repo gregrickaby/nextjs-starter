@@ -17,6 +17,7 @@
     "node": ">=10"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "hamburger-react": "^2.2.0",
     "next": "next@canary",
     "react": "16.13.1",
@@ -51,8 +52,6 @@
     "build": "next build",
     "build-storybook": "build-storybook",
     "clean": "rm -rf .next",
-    "deploy prod": "now --prod",
-    "deploy staging": "now",
     "dev": "yarn clean && yarn lint && next dev",
     "develop": "yarn dev",
     "export": "next export",

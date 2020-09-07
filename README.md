@@ -15,21 +15,14 @@ https://the-nextjs-starter.vercel.app/
 
 ---
 
-✨ **Behold...The Features** ✨
+## ✨ Behold...The Features ✨ <!-- omit in toc -->
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [TailwindCSS](https://tailwindcss.com)
-- [Storybook](https://storybook.js.org)
-- [Chromatic](https://www.chromatic.com)
-- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/)
-- [Stylelint](https://stylelint.io/)
-- [Vercel](https://vercel.com/) hosting ready
-- Minimal styles
-- Global config file
-- SEO at the page level
-- PWA Ready
+| The Stack                                                | Design System                                                  | Github Integration                      | Linting                            | Other                 |
+| -------------------------------------------------------- | :------------------------------------------------------------- | :-------------------------------------- | :--------------------------------- | :-------------------- |
+| [Next.js](https://nextjs.org/)                           | [Storybook](https://storybook.js.org)                          | [Vercel](https://vercel.com/)           | [ESLint](https://eslint.org/)      | Minimal styles        |
+| [TypeScript](https://www.typescriptlang.org/)            | [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) | [Chromatic](https://www.chromatic.com/) | [Stylelint](https://stylelint.io/) | Global config file    |
+| [TailwindCSS](https://tailwindcss.com)                   |                                                                |                                         | [Prettier](https://prettier.io/)   | SEO at the page level |
+| [React Hooks](https://reactjs.org/docs/hooks-intro.html) |                                                                |                                         | PWA Ready                          | PWA Ready             |
 
 ---
 
@@ -40,7 +33,6 @@ https://the-nextjs-starter.vercel.app/
   - [Global Config](#global-config)
   - [Styles](#styles)
     - [TailwindCSS](#tailwindcss)
-    - [CSS Modules or Sass](#css-modules-or-sass)
   - [Site Icons & Favicons](#site-icons--favicons)
   - [SEO](#seo)
     - [Global](#global)
@@ -48,7 +40,8 @@ https://the-nextjs-starter.vercel.app/
   - [Hosting at Vercel (optional)](#hosting-at-vercel-optional)
   - [Progressive Web App (optional)](#progressive-web-app-optional)
 - [📝 TypeScript](#-typescript)
-- [📚 Storybook (optional)](#-storybook-optional)
+- [⚛ Atomic Design](#-atomic-design)
+- [📚 Storybook](#-storybook)
   - [About](#about)
   - [Configuration](#configuration)
   - [Stories](#stories)
@@ -56,7 +49,7 @@ https://the-nextjs-starter.vercel.app/
   - [About](#about-1)
   - [Configuration](#configuration-1)
 - [:octocat: Contributing](#octocat-contributing)
-- [🙌🏻 Credits](#-credits)
+- [🙌🏻 Credits & License](#-credits--license)
 
 ---
 
@@ -94,10 +87,10 @@ yarn start
 
 ### Global Config
 
-The global config file `lib/config.js` contains several constants used throughout this starter. Adjust to meet your needs:
+The global config file `site.config.js` contains several constants used throughout this starter. Adjust to meet your needs:
 
 ```js
-// lib/config.js
+// site.config.js
 const config = {
   siteName: 'Site Name',
   siteDescription: 'The description of this website',
@@ -129,17 +122,15 @@ export default config
 
 #### TailwindCSS
 
-This starter leverages all the features that come with [TailwindCSS](https://tailwindcss.com/). Styling can be accomplished with one (or any combination) of the following:
+This starter leverages all the features that come with [TailwindCSS](https://tailwindcss.com/).
 
-- Presentational classes in JSX
-- Use the [`@apply` directive](https://tailwindcss.com/docs/functions-and-directives#apply) in `/styles/index.css`
-- By [creating a theme](https://tailwindcss.com/docs/theme) in `tailwind.config.js`
+Styling can be accomplished with one (or any combination) of the following:
+
+1. Presentational classes in JSX
+2. Use the [`@apply` directive](https://tailwindcss.com/docs/functions-and-directives#apply) in `/styles/index.css`
+3. By [creating a theme](https://tailwindcss.com/docs/theme) in `tailwind.config.js`
 
 Learn more about working with [TailwindCSS](https://tailwindcss.com/docs/preflight).
-
-#### CSS Modules or Sass
-
-If Tailwind isn't your jam, feel free to use CSS Modules or Sass, which come [baked into Next.js](https://nextjs.org/docs/basic-features/built-in-css-support)-- no additional configuration needed.
 
 ---
 
@@ -240,7 +231,68 @@ This starter has full support for [TypeScript](https://www.typescriptlang.org/),
 
 ---
 
-## 📚 Storybook (optional)
+## ⚛ Atomic Design
+
+To quote [Brad Frost's](https://bradfrost.com/) "[Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)".
+
+> In the natural world, atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms.
+
+**Atoms**
+
+Serve as the foundational building blocks that comprise all our user interfaces. These include basic HTML elements like form labels, inputs, buttons, and others ***that can’t be broken down any further without ceasing to be functional***.
+
+**Molecules**
+
+Are relatively simple ***groups of UI elements functioning together as a unit***. For example, a form label, search input, and button can join together to create a search form molecule.
+
+**Organisms**
+
+Are relatively ***complex UI components composed of groups of molecules and/or atoms and/or other organisms***. These organisms form distinct sections of an interface.
+
+
+**Templates**
+
+Are page-level objects that ***place components into a layout and articulate the design’s underlying content structure-- rather than the final content.***
+
+**Pages**
+
+Are specific instances of templates ***that show what a UI looks like with real content in place***.
+
+**Component organization:**
+
+```
+/components
+├── /atoms
+│   ├── Button.stories.tsx
+│   ├── Button.tsx
+│   ├── Input.stories.tsx
+│   ├── Input.tsx
+│   ├── Label.stories.tsx
+│   └── Label.tsx
+├── /molecules
+│   ├── Logo.stories.tsx
+│   ├── Logo.tsx
+│   ├── Navigation.stories.tsx
+│   ├── Navigation.tsx
+│   ├── SearchForm.stories.tsx
+│   └── SearchForm.tsx
+├── /organisms
+│   ├── Header.stories.tsx
+│   └── Header.tsx
+├── /templates
+│   ├── Homepage.stories.tsx
+│   └── Homepage.tsx
+/pages
+├── index.tsx
+├── about.tsx
+```
+---
+
+The Atomic Design System all comes together and is cataloged in Storybook:
+
+![screenshot of storybook](https://dl.dropbox.com/s/eidco5h8zlxpbea/Screen%20Shot%202020-09-07%20at%203.47.26%20PM.png?dl=0)
+
+## 📚 Storybook
 
 [View this starter's Storybook](https://main--5f4fb61efe7d0c0022b750b7.chromatic.com).
 
@@ -267,10 +319,10 @@ Learn more by reading the [official docs](https://storybook.js.org/docs/react/ge
 
 The `.storybook` folder is where configuration files are placed. There are two files:
 
-`main.js` is Storybook's primary configuration file:
+`main.ts` is Storybook's primary configuration file:
 
 ```js
-// .storybook/main.js
+// .storybook/main.ts
 module.exports = {
   stories: [
     '../components/**/*.stories.mdx',
@@ -287,7 +339,7 @@ module.exports = {
 `preview.js` provides additional configuration when previewing components inside Storybook:
 
 ```js
-// .storybook/preview.js
+// .storybook/preview.ts
 import '../styles/index.css'
 
 export const parameters = {
@@ -302,15 +354,15 @@ The config above will import the starter's CSS, so components will look like the
 Storybook is flexible, and you can configure it to search in any directory for stories. You'll often see them placed in a `/stories` directory. I've chosen to keep stories with their components, for example:
 
 ```
-├── components
-│   ├── blocks
-│   │   ├── Alerts.js
-│   │   ├── Alerts.stories.js
-│   │   ├── Hero.js
-│   │   └── Hero.stories.js
+/components
+├── /molecules
+│   ├── Alerts.tsx
+│   ├── Alerts.stories.tsx
+│   ├── Hero.tsx
+│   └── Hero.stories.tsx
 ```
 
-In my experience, it's harder to forget to write or update a story-- if it's located next to the component. If you want to move your stories to their own directory, make sure you update `main.js`.
+In my experience, it's harder to forget to write or update a story-- if it's located next to the component. If you want to move your stories to their own directory, make sure you update `main.ts`.
 
 Learn more about [writing stories](https://storybook.js.org/docs/react/get-started/whats-a-story).
 
@@ -357,6 +409,6 @@ To use Chromatic on your project, [sign up for a free account](https://www.chrom
 
 I would love feedback contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls). 🍻
 
-## 🙌🏻 Credits
+## 🙌🏻 Credits & License
 
-Illustration by Maria Shukshina from <a href="https://icons8.com/">Icons8</a>
+The exploding head illustration is by Maria Shukshina (from <a href="https://icons8.com/">Icons8</a>). This starter is licensed under the [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).

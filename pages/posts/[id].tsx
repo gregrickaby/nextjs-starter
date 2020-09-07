@@ -1,12 +1,12 @@
 import React from 'react'
 import {GetStaticPaths, GetStaticProps} from 'next'
-import Layout from '@/components/global/Layout'
+import Layout from '@/components/common/Layout'
 import {fetcher} from '@/lib/functions'
-import {Info} from '@/components/blocks/Alerts'
-import {Post} from '@/interfaces/index'
+import {Info} from '@/components/molecules/Alert'
+import {PostProps} from '@/interfaces/index'
 
-interface Posts extends Post {
-  post: Post
+interface Posts extends PostProps {
+  post: PostProps
 }
 
 const BlogPost: React.FC<Posts> = ({post}: Posts) => {

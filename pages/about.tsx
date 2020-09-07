@@ -1,5 +1,6 @@
-import Layout from '@/components/global/Layout'
-import {Info} from '@/components/blocks/Alerts'
+import React from 'react'
+import Layout from '@/components/common/Layout'
+import {Info} from '@/components/molecules/Alert'
 
 const About: React.FC = () => {
   return (

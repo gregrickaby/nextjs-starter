@@ -1,23 +1,7 @@
-import {useEffect, useRef} from 'react'
-import Link from 'next/link'
-import {shrinkHeader} from '@/lib/functions'
-import Navigation from './Navigation'
-
-const Logo: React.FC = () => {
-  return (
-    <Link href="/">
-      <a>
-        <img
-          src="/logo.svg"
-          alt="site logo"
-          loading="lazy"
-          height="128"
-          width="128"
-        />
-      </a>
-    </Link>
-  )
-}
+import React, {useEffect, useRef} from 'react'
+import Navigation from '../../components/molecules/Navigation'
+import Logo from '../../components/molecules/Logo'
+import {shrinkHeader} from '../../lib/functions'
 
 const Header: React.FC = () => {
   const headerRef = useRef(null)

@@ -1,16 +1,16 @@
 import React, {ReactElement} from 'react'
 import {GetServerSideProps} from 'next'
-import Layout from '@/components/global/Layout'
-import {fetcher} from '@/lib/functions'
 import Link from 'next/link'
-import {Info} from '@/components/blocks/Alerts'
-import {Post} from '@/interfaces/index'
+import {PostProps} from '@/interfaces/index'
+import {fetcher} from '@/lib/functions'
+import Layout from '@/components/common/Layout'
+import {Info} from '@/components/molecules/Alert'
 
-type Props = {
+type SsrProps = {
   data: []
 }
 
-const SSR: React.FC<Props> = ({data}: Props) => {
+const SSR: React.FC<SsrProps> = ({data}: SsrProps) => {
   return (
     <Layout
       title="Server-side Rendering (SSR)"
@@ -28,7 +28,7 @@ const SSR: React.FC<Props> = ({data}: Props) => {
 
         <section>
           {data.map(
-            (post: Post, index: number): ReactElement => (
+            (post: PostProps, index: number): ReactElement => (
               <article key={index}>
                 <h1>
                   <Link href={`/posts/${post.id}`}>

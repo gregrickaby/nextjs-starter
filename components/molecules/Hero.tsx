@@ -1,12 +1,12 @@
 import React from 'react'
 
-type Props = {
+export interface HeroProps {
   title: string
   description: string
   background: string
 }
 
-const Hero: React.FC<Props> = (props: Props) => {
+const Hero: React.FC<HeroProps> = (props: HeroProps) => {
   return (
     <section className="relative overflow-hidden">
       <div className="container relative z-10 p-24 lg:p-64">

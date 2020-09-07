@@ -1,5 +1,5 @@
 import React from 'react'
-import {Info, Warning} from './Alerts'
+import {Info, Warning} from './Alert'
 
 /**
  * The following is a story.
@@ -14,7 +14,7 @@ import {Info, Warning} from './Alerts'
  */
 
 export default {
-  title: 'Components/Blocks/Alerts',
+  title: 'Design System/Molecules/Alerts',
   component: Info
 }
 
