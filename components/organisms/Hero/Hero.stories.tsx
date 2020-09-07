@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '.'
+import Hero from './index'
 
 /**
  * The following is a story.
