@@ -1,10 +1,10 @@
 import React from 'react'
 
-type Props = {
+export interface AlertProps {
   children: React.ReactNode
 }
 
-export const Info: React.FC<Props> = ({children}: Props) => {
+export const Info: React.FC<AlertProps> = ({children}: AlertProps) => {
   return (
     <div
       className="flex items-center bg-blue-500 text-white px-4 mb-8 rounded shadow"
@@ -22,7 +22,7 @@ export const Info: React.FC<Props> = ({children}: Props) => {
   )
 }
 
-export const Warning: React.FC<Props> = ({children}: Props) => {
+export const Warning: React.FC<AlertProps> = ({children}: AlertProps) => {
   return (
     <div
       className="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4"

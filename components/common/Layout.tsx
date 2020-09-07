@@ -4,7 +4,7 @@ import Header from '@/components/organisms/Header'
 import Footer from '@/components/organisms/Footer'
 import SiteConfig from 'site.config'
 
-type LayoutProps = {
+export interface LayoutProps {
   children: React.ReactElement
   author?: string
   title?: string
