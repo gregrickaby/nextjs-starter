@@ -40,16 +40,16 @@ export interface ButtonProps {
   /**
    * Required. The display content of the button.
    */
-  content: string
+  text: string
   /**
    * Optional. Additional CSS classes.
    */
   classes?: string
 }
 
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   isDisabled = false,
-  content = 'Learn More',
+  text = 'Learn More',
   classes
 }: ButtonProps) => {
   return (
@@ -58,7 +58,9 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={isDisabled}
       className={cn(defaultStyles, classes)}
     >
-      {content}
+      {text}
     </button>
   )
 }
+
+export default Button

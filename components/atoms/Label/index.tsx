@@ -4,14 +4,14 @@ export interface LabelProps {
   /**
    * Required. Use &lt;input&gt; as children.
    */
-  children: React.ReactElement
+  children: React.ReactNode
   /**
    * Optional. A description for the field.
    */
   text?: string
 }
 
-export const Label: React.FC<LabelProps> = ({text, children}: LabelProps) => {
+const Label: React.FC<LabelProps> = ({children, text}: LabelProps) => {
   return (
     <label>
       {text}
@@ -19,3 +19,5 @@ export const Label: React.FC<LabelProps> = ({text, children}: LabelProps) => {
     </label>
   )
 }
+
+export default Label

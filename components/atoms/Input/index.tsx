@@ -23,7 +23,7 @@ export interface InputProps {
 const defaultStyles =
   'bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal'
 
-export const Input: React.FC<InputProps> = ({
+const Input: React.FC<InputProps> = ({
   type = 'text',
   id,
   placeholder,
@@ -38,3 +38,5 @@ export const Input: React.FC<InputProps> = ({
     />
   )
 }
+
+export default Input
