@@ -1,15 +1,29 @@
 /**
+ * The shape of a WordPress post returned from the WordPress REST-API.
+ *
  * @type {object}
  */
-export interface Post {
-  id: number /** the WordPress post id */
+export interface PostProps {
+  /**
+   * The WordPress post ID.
+   */
+  id: number
+  /**
+   * The post title.
+   */
   title: {
-    rendered: string /** the post title */
+    rendered: string
   }
+  /**
+   * The post excerpt.
+   */
   excerpt: {
-    rendered: string /** the post excerpt */
+    rendered: string
   }
+  /**
+   * The post content.
+   */
   content: {
-    rendered: string /** the post content */
+    rendered: string
   }
 }

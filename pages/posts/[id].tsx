@@ -3,10 +3,10 @@ import {GetStaticPaths, GetStaticProps} from 'next'
 import Layout from '@/components/common/Layout'
 import {fetcher} from '@/lib/functions'
 import {Info} from '@/components/molecules/Alert'
-import {Post} from '@/interfaces/index'
+import {PostProps} from '@/interfaces/index'
 
-interface Posts extends Post {
-  post: Post
+interface Posts extends PostProps {
+  post: PostProps
 }
 
 const BlogPost: React.FC<Posts> = ({post}: Posts) => {
