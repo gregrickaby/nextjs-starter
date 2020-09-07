@@ -18,7 +18,7 @@ export default {
   component: Button,
   decorators: [
     (Story) => (
-      <div className="flex justify-center">
+      <div className="m-10">
         <Story />
       </div>
     )
@@ -26,7 +26,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'The primary button.'
+        component: 'A &lt;button&gt; element.'
       }
     }
   }
