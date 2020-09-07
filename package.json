@@ -52,8 +52,6 @@
     "build": "next build",
     "build-storybook": "build-storybook",
     "clean": "rm -rf .next",
-    "deploy prod": "now --prod",
-    "deploy staging": "now",
     "dev": "yarn clean && yarn lint && next dev",
     "develop": "yarn dev",
     "export": "next export",
