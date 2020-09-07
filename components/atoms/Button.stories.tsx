@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchForm from './index'
+import Button from './Button'
 
 /**
  * The following is a story.
@@ -14,22 +14,23 @@ import SearchForm from './index'
  */
 
 export default {
-  title: 'Design System/Molecules/Search Form',
-  component: SearchForm,
+  title: 'Design System/Atoms/Button',
+  component: Button,
   parameters: {
     docs: {
       description: {
-        component: 'A &lt;label&gt; element.'
+        component: 'A &lt;button&gt; element.'
       }
     }
   }
 }
 
 // @ts-ignore
-const Template = (args: Record<string, unknown>) => <SearchForm {...args} />
+const Template = (args: Record<string, unknown>) => <Button {...args} />
 
-export const Default = Template.bind({})
+export const Primary = Template.bind({})
 
-Default.args = {
-  text: 'Search the site'
+Primary.args = {
+  isDisabled: false,
+  text: 'Learn More'
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from './index'
+import Input from './Input'
 
 /**
  * The following is a story.

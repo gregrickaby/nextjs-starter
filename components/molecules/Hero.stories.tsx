@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './index'
+import Hero from './Hero'
 
 /**
  * The following is a story.
@@ -14,7 +14,7 @@ import Hero from './index'
  */
 
 export default {
-  title: 'Design System/Organisms/Hero',
+  title: 'Design System/Molecules/Hero',
   component: Hero
 }
 

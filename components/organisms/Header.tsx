@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import Link from 'next/link'
 import {shrinkHeader} from '@/lib/functions'
-import Navigation from '@/components/organisms/Navigation'
+import Navigation from '@/components/molecules/Navigation'
 
 const Logo: React.FC = () => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import cn from 'classnames'
-import Button from '../../atoms/Button'
-import Input from '../../atoms/Input'
-import Label from '../../atoms/Label'
+import Button from '../atoms/Button'
+import Input from '../atoms/Input'
+import Label from '../atoms/Label'
 
 export interface SearchFormProps {
   /**

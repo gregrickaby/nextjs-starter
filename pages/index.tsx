@@ -1,7 +1,7 @@
 import React from 'react'
 import SiteConfig from 'site.config'
 import Layout from '@/components/common/Layout'
-import Hero from '@/components/organisms/Hero'
+import Hero from '@/components/molecules/Hero'
 
 const HomePage: React.FC = () => {
   return (

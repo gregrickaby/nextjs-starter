@@ -1,6 +1,6 @@
 import React from 'react'
-import Label from './index'
-import Input from '../Input'
+import Label from './Label'
+import Input from './Input'
 
 /**
  * The following is a story.
