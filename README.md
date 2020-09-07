@@ -15,21 +15,14 @@ https://the-nextjs-starter.vercel.app/
 
 ---
 
-✨ **Behold...The Features** ✨
+## ✨ Behold...The Features ✨ <!-- omit in toc -->
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [TailwindCSS](https://tailwindcss.com)
-- [Storybook](https://storybook.js.org)
-- [Chromatic](https://www.chromatic.com)
-- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/)
-- [Stylelint](https://stylelint.io/)
-- [Vercel](https://vercel.com/) hosting ready
-- Minimal styles
-- Global config file
-- SEO at the page level
-- PWA Ready
+| The Stack                                                | Design System                                                  | Github Integration                      | Linting                            | Other                 |
+| -------------------------------------------------------- | :------------------------------------------------------------- | :-------------------------------------- | :--------------------------------- | :-------------------- |
+| [Next.js](https://nextjs.org/)                           | [Storybook](https://storybook.js.org)                          | [Vercel](https://vercel.com/)           | [ESLint](https://eslint.org/)      | Minimal styles        |
+| [TypeScript](https://www.typescriptlang.org/)            | [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) | [Chromatic](https://www.chromatic.com/) | [Stylelint](https://stylelint.io/) | Global config file    |
+| [TailwindCSS](https://tailwindcss.com)                   |                                                                |                                         | [Prettier](https://prettier.io/)   | SEO at the page level |
+| [React Hooks](https://reactjs.org/docs/hooks-intro.html) |                                                                |                                         |                                    | PWA Ready             |
 
 ---
 
