@@ -1,6 +1,6 @@
 import React, {useState, ReactElement} from 'react'
 import Link from 'next/link'
-import SiteConfig from 'site.config'
+import SiteConfig from '../../site.config'
 import Hamburger from 'hamburger-react'
 
 const Links: React.FC = () => {
