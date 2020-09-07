@@ -6,11 +6,11 @@ import {fetcher} from '@/lib/functions'
 import Layout from '@/components/common/Layout'
 import {Info} from '@/components/molecules/Alert'
 
-type Props = {
+type SsgProps = {
   data: []
 }
 
-const SSG: React.FC<Props> = ({data}: Props) => {
+const SSG: React.FC<SsgProps> = ({data}: SsgProps) => {
   return (
     <Layout
       title="Static Generation (SSG)"
