@@ -28,9 +28,9 @@ export default {
 // @ts-ignore
 const Template = (args: Record<string, unknown>) => <Button {...args} />
 
-export const Primary = Template.bind({})
+export const Default = Template.bind({})
 
-Primary.args = {
+Default.args = {
   isDisabled: false,
   text: 'Learn More'
 }

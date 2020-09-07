@@ -29,12 +29,12 @@ export default {
 // @ts-ignore
 const Template = (args: Record<string, unknown>) => (
   <Label {...args}>
-    <Input type="text" placeholder="First name" />
+    <Input type="text" placeholder="This input field is a placeholder" />
   </Label>
 )
 
 export const Default = Template.bind({})
 
 Default.args = {
-  text: 'Enter your name'
+  text: 'Enter your name:'
 }
