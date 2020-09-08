@@ -1,13 +1,19 @@
 import React, {useEffect, useRef} from 'react'
 import Navigation from '../../components/molecules/Navigation'
 import Logo from '../../components/molecules/Logo'
-import {shrinkHeader} from '../../lib/functions'
+import useScrollPosition from '../../hooks/useScrollPosition'
 
 const Header: React.FC = () => {
   const headerRef = useRef(null)
+  const scrollY = useScrollPosition()
+
   useEffect(() => {
-    shrinkHeader(headerRef)
-  }, [])
+    if (scrollY > 30) {
+      headerRef.current.classList.add('shrink')
+    } else {
+      headerRef.current.classList.remove('shrink')
+    }
+  })
   return (
     <header
       ref={headerRef}
