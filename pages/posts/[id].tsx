@@ -1,7 +1,7 @@
 import React from 'react'
 import {GetStaticPaths, GetStaticProps} from 'next'
 import Layout from '@/components/common/Layout'
-import {fetcher} from '@/lib/functions'
+import {fetcher} from '@/functions/index'
 import {Info} from '@/components/molecules/Alert'
 import {PostProps} from '@/interfaces/index'
 

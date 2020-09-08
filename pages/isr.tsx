@@ -2,7 +2,7 @@ import React, {ReactElement} from 'react'
 import {GetStaticProps} from 'next'
 import Link from 'next/link'
 import {PostProps} from '@/interfaces/index'
-import {fetcher} from '@/lib/functions'
+import {fetcher} from '@/functions/index'
 import Layout from '@/components/common/Layout'
 import {Info} from '@/components/molecules/Alert'
 
