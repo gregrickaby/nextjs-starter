@@ -5,10 +5,7 @@ module.exports = {
   author: '@yourname',
   navigation: [
     {label: 'Home', href: '/'},
-    {label: 'About', href: '/about'},
-    {label: 'SSG', href: '/ssg'},
-    {label: 'SSR', href: '/ssr'},
-    {label: 'ISR', href: '/isr'}
+    {label: 'About', href: '/about'}
   ],
   social: {
     github: {
