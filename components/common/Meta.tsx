@@ -1,12 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-
-export interface MetaProps {
-  author?: string
-  title?: string
-  description?: string
-  siteUrl?: string
-}
+import {MetaProps} from '../../interfaces'
 
 const Meta: React.FC<MetaProps> = (props: MetaProps) => {
   return (
