@@ -11,9 +11,10 @@ https://the-nextjs-starter.vercel.app/
 <img alt="GitHub package.json dependency version (dev)" src="https://img.shields.io/github/package-json/dependency-version/gregrickaby/nextjs-starter/dev/tailwindcss?style=flat-square">
 <img alt="GitHub package.json dependency version (dev)" src="https://img.shields.io/github/package-json/dependency-version/gregrickaby/nextjs-starter/dev/@storybook/react?style=flat-square">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/gregrickaby/nextjs-starter?style=flat-square">
-</div>
 
----
+[![Edit gregrickaby/nextjs-starter](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gregrickaby/nextjs-starter/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
+
+## </div>
 
 ## ✨ Behold...The Features ✨ <!-- omit in toc -->
 
@@ -28,6 +29,7 @@ https://the-nextjs-starter.vercel.app/
 
 ## 🗂 Table of Contents <!-- omit in toc -->
 
+- [</div>](#div)
 - [🚀 Install](#-install)
 - [🔧 Setup Documentation](#-setup-documentation)
   - [Global Config](#global-config)
@@ -239,24 +241,23 @@ To quote [Brad Frost's](https://bradfrost.com/) "[Atomic Design](https://atomicd
 
 **Atoms**
 
-Serve as the foundational building blocks that comprise all our user interfaces. These include basic HTML elements like form labels, inputs, buttons, and others ***that can’t be broken down any further without ceasing to be functional***.
+Serve as the foundational building blocks that comprise all our user interfaces. These include basic HTML elements like form labels, inputs, buttons, and others **_that can’t be broken down any further without ceasing to be functional_**.
 
 **Molecules**
 
-Are relatively simple ***groups of UI elements functioning together as a unit***. For example, a form label, search input, and button can join together to create a search form molecule.
+Are relatively simple **_groups of UI elements functioning together as a unit_**. For example, a form label, search input, and button can join together to create a search form molecule.
 
 **Organisms**
 
-Are relatively ***complex UI components composed of groups of molecules and/or atoms and/or other organisms***. These organisms form distinct sections of an interface.
-
+Are relatively **_complex UI components composed of groups of molecules and/or atoms and/or other organisms_**. These organisms form distinct sections of an interface.
 
 **Templates**
 
-Are page-level objects that ***place components into a layout and articulate the design’s underlying content structure-- rather than the final content.***
+Are page-level objects that **_place components into a layout and articulate the design’s underlying content structure-- rather than the final content._**
 
 **Pages**
 
-Are specific instances of templates ***that show what a UI looks like with real content in place***.
+Are specific instances of templates **_that show what a UI looks like with real content in place_**.
 
 **Component organization:**
 
@@ -286,6 +287,7 @@ Are specific instances of templates ***that show what a UI looks like with real 
 ├── index.tsx
 ├── about.tsx
 ```
+
 ---
 
 The Atomic Design System all comes together and is cataloged in Storybook:
