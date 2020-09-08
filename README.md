@@ -14,7 +14,9 @@ https://the-nextjs-starter.vercel.app/
 
 [![Edit gregrickaby/nextjs-starter](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gregrickaby/nextjs-starter/tree/main/?fontsize=14&hidenavigation=1&theme=dark)
 
-## </div>
+</div>
+
+---
 
 ## ✨ Behold...The Features ✨ <!-- omit in toc -->
 
@@ -29,7 +31,6 @@ https://the-nextjs-starter.vercel.app/
 
 ## 🗂 Table of Contents <!-- omit in toc -->
 
-- [</div>](#div)
 - [🚀 Install](#-install)
 - [🔧 Setup Documentation](#-setup-documentation)
   - [Global Config](#global-config)
