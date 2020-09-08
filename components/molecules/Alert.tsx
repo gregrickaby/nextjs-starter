@@ -1,6 +1,9 @@
 import React from 'react'
 
 export interface AlertProps {
+  /**
+   * Required. Content placed in the alert.
+   */
   children: React.ReactNode
 }
 

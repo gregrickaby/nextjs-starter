@@ -1,9 +1,18 @@
 import React from 'react'
 
 export interface HeroProps {
+  /**
+   * Required. The headline at the top of the hero.
+   */
   title: string
-  description: string
-  background: string
+  /**
+   * Optional. Supporting text below the headline.
+   */
+  description?: string
+  /**
+   * Optional. A background image.
+   */
+  background?: string
 }
 
 const Hero: React.FC<HeroProps> = (props: HeroProps) => {
