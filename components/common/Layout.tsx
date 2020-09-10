@@ -9,7 +9,7 @@ export interface LayoutProps extends MetaProps {
   /**
    * Required. Content between the &lt;main&gt;
    */
-  children: React.ReactElement
+  children: React.ReactNode
 }
 
 const Layout: React.FC<LayoutProps> = ({
