@@ -45,7 +45,6 @@
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.1",
-    "pretty-quick": "^3.0.1",
     "react-is": "^16.13.1",
     "stylelint": "^13.7.0",
     "stylelint-config-standard": "^20.0.0",
@@ -58,10 +57,11 @@
     "clean": "rm -rf .next",
     "dev": "yarn clean && yarn lint && next dev",
     "develop": "yarn dev",
-    "export": "next export",
+    "format": "npx prettier --config=prettier.config.js '**/*.{js,jsx,ts,tsx,md,html,css,scss,json}' --write || true",
     "lint:js": "npx eslint --config=.eslintrc.js ./ --fix || true",
-    "lint:css": "npx stylelint --config=stylelint.config.js '**/*.{css,scss,sass}' || true",
-    "lint": "yarn run lint:js && yarn run lint:css",
+    "lint:css": "npx stylelint --config=stylelint.config.js '**/*.css' --fix || true",
+    "lint": "yarn run format && yarn run lint:js && yarn run lint:css",
+    "export": "next export",
     "start": "next start",
     "storybook": "start-storybook -p 6006"
   },
@@ -69,9 +69,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.true": "stylelint --fix"
   }
 }
