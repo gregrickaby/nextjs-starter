@@ -44,7 +44,9 @@
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.1",
+    "pretty-quick": "^3.0.1",
     "react-is": "^16.13.1",
+    "stylelint": "^13.7.0",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^1.8.6",
     "typescript": "^4.0.2"
@@ -56,14 +58,17 @@
     "dev": "yarn clean && yarn lint && next dev",
     "develop": "yarn dev",
     "export": "next export",
-    "lint": "eslint ./ --fix || true",
+    "format": "npx pretty-quick --staged",
+    "lint:js": "npx eslint --config=.eslintrc.js ./ --fix || true",
+    "lint:css": "npx stylelint --config=stylelint.config.js '**/*.{css,scss,sass}' || true",
+    "lint": "yarn run format && yarn run lint:js && yarn run lint:css",
     "start": "next start",
     "storybook": "start-storybook -p 6006"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
+      "pre-commit": "yarn run format",
+      "pre-push": "yarn run lint"
     }
   }
 }
