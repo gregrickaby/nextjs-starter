@@ -6,3 +6,21 @@
 .shrink {
   @apply py-4 duration-100 ease-in-out;
 }
+
+/* Basic Algolia styles */
+.ais-SearchBox {
+  margin: 1em 0;
+}
+
+.ais-Pagination {
+  margin-top: 1em;
+}
+
+.left-panel {
+  float: left;
+  width: 250px;
+}
+
+.right-panel {
+  margin-left: 260px;
+}
