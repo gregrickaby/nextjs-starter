@@ -19,7 +19,7 @@ export interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
   isDisabled = false,
-  text = 'Learn More',
+  text = 'Learn More!',
   classes
 }: ButtonProps) => {
   return (
