@@ -17,11 +17,13 @@
     "node": ">=10"
   },
   "dependencies": {
+    "algoliasearch": "^4.4.0",
     "classnames": "^2.2.6",
     "hamburger-react": "^2.2.0",
     "next": "next@canary",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-instantsearch-dom": "^6.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
