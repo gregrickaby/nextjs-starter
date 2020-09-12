@@ -1,3 +1,5 @@
+import React from 'react'
+
 /**
  * @see https://heroicons.com/
  */
