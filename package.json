@@ -19,7 +19,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "hamburger-react": "^2.2.0",
-    "next": "next@canary",
+    "next": "^9.5.4-canary.13",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
@@ -39,16 +39,16 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.1",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "husky": "^4.3.0",
     "lint-staged": ">=10",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.1",
     "react-is": "^16.13.1",
-    "stylelint": "^13.7.0",
+    "stylelint": "^13.7.1",
     "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "^1.8.7",
+    "tailwindcss": "^1.8.8",
     "typescript": "^4.0.2"
   },
   "scripts": {
