@@ -5,7 +5,16 @@ module.exports = {
   author: '@yourname',
   navigation: [
     {label: 'Home', href: '/'},
-    {label: 'About', href: '/about'}
+    {label: 'About', href: '/about'},
+    {
+      label: 'Storybook',
+      href: 'https://main--5f4fb61efe7d0c0022b750b7.chromatic.com'
+    },
+    {
+      label: 'Chromatic',
+      href:
+        'https://www.chromatic.com/library?appId=5f4fb61efe7d0c0022b750b7&branch=main'
+    }
   ],
   social: {
     github: {
