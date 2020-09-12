@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import Navigation from '../../components/molecules/Navigation'
 import Logo from '../../components/molecules/Logo'
+import SearchForm from '../../components/molecules/SearchForm'
 import useScrollPosition from '../../hooks/useScrollPosition'
 
 const Header: React.FC = () => {
@@ -22,6 +23,7 @@ const Header: React.FC = () => {
       <div className="container px-4 lg:px-0 flex items-center justify-between">
         <Logo />
         <Navigation />
+        <SearchForm />
       </div>
     </header>
   )
