@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import cn from 'classnames'
 import Button from '../atoms/Button'
 import Input from '../atoms/Input'
 import Label from '../atoms/Label'
+import {SearchIcon} from '../atoms/Icons'
 
 export interface SearchFormProps {
   /**
@@ -16,19 +17,29 @@ export interface SearchFormProps {
 }
 
 const defaultStyles =
-  'bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal'
+  'bg-white focus:outline-none focus:shadow-outline rounded-lg py-2 px-4 block w-full appearance-none leading-normal'
 
 const SearchForm: React.FC<SearchFormProps> = ({
   text,
   classes
 }: SearchFormProps) => {
+  const [isToggled, setToggled] = useState(false)
+
+  const toggleSearch = () => setToggled(!isToggled)
   return (
-    <div className={cn(defaultStyles, classes)}>
-      <Label text={text}>
-        <Input type="search" placeholder="Enter a keyword" />
-        <Button text="Search" isDisabled={false} />
-      </Label>
-    </div>
+    <>
+      {isToggled && (
+        <div className={cn(defaultStyles, classes)}>
+          <Label text={text}>
+            <Input type="search" placeholder="Enter a keyword" />
+            <Button text="Search" isDisabled={false} />
+          </Label>
+        </div>
+      )}
+      <button onClick={toggleSearch}>
+        <SearchIcon />
+      </button>
+    </>
   )
 }
 
