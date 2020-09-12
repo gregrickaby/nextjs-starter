@@ -55,7 +55,7 @@
     "build": "next build",
     "build-storybook": "build-storybook",
     "clean": "rm -rf .next",
-    "dev": "yarn clean && yarn lint && next dev",
+    "dev": "yarn clean && next dev",
     "develop": "yarn dev",
     "format": "npx prettier --config=prettier.config.js '**/*.{js,jsx,ts,tsx,md,html,css,scss,json}' --write || true",
     "lint:js": "npx eslint --config=.eslintrc.js ./ --fix || true",
