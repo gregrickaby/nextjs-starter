@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   return (
     <header
       ref={headerRef}
-      className="sticky top-0 py-8 transition-all bg-white border-b border-gray-200"
+      className="sticky top-0 z-50 py-8 transition-all bg-white border-b border-gray-200"
     >
       <div className="container px-4 lg:px-0 flex items-center justify-between">
         <Logo />

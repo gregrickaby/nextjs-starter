@@ -1,9 +1,33 @@
 import React, {useState} from 'react'
 import cn from 'classnames'
-import Button from '../atoms/Button'
-import Input from '../atoms/Input'
-import Label from '../atoms/Label'
-import {SearchIcon} from '../atoms/Icons'
+import algoliasearch from 'algoliasearch/lite'
+import {
+  InstantSearch,
+  SearchBox,
+  Configure,
+  Panel,
+  Hits,
+  Highlight
+} from 'react-instantsearch-dom'
+
+const searchClient = algoliasearch(
+  'B1G2GM9NG0',
+  'aadef574be1f9252bb48d4ea09b5cfe5'
+)
+
+function Hit(props) {
+  return (
+    <>
+      <div className="flex justify-between space-x-3 ">
+        <div className="hit-name">
+          <Highlight attribute="name" hit={props.hit} />
+        </div>
+        <div className="hit-price">${props.hit.price}</div>
+        <img src={props.hit.image} alt={props.hit.name} />
+      </div>
+    </>
+  )
+}
 
 export interface SearchFormProps {
   /**
@@ -17,29 +41,26 @@ export interface SearchFormProps {
 }
 
 const defaultStyles =
-  'bg-white focus:outline-none focus:shadow-outline rounded-lg py-2 px-4 block w-full appearance-none leading-normal'
+  'w-100 flex flex-col items-center justify-between relative'
 
 const SearchForm: React.FC<SearchFormProps> = ({
   text,
   classes
 }: SearchFormProps) => {
   const [isToggled, setToggled] = useState(false)
-
   const toggleSearch = () => setToggled(!isToggled)
   return (
-    <>
-      {isToggled && (
-        <div className={cn(defaultStyles, classes)}>
-          <Label text={text}>
-            <Input type="search" placeholder="Enter a keyword" />
-            <Button text="Search" isDisabled={false} />
-          </Label>
-        </div>
-      )}
-      <button onClick={toggleSearch}>
-        <SearchIcon />
-      </button>
-    </>
+    <div className={cn(defaultStyles, classes)}>
+      <InstantSearch searchClient={searchClient} indexName="demo_ecommerce">
+        <Configure hitsPerPage={5} />
+        <SearchBox onChange={toggleSearch} />
+        {isToggled && (
+          <Panel header="Results" className="absolute top-0 pt-10">
+            <Hits hitComponent={Hit} />
+          </Panel>
+        )}
+      </InstantSearch>
+    </div>
   )
 }
 
