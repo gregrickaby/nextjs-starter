@@ -1,7 +1,7 @@
 import {useEffect, useRef} from 'react'
 import Link from 'next/link'
 import {shrinkHeader} from '@/lib/functions'
-import Navigation from './Navigation'
+import Navigation from '../molecules/Navigation'
 
 function Logo() {
   return (

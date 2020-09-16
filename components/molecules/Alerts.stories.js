@@ -14,7 +14,7 @@ import {Info, Warning} from './Alerts'
  */
 
 export default {
-  title: 'Components/Blocks/Alerts',
+  title: 'Design System/Molecules/Alerts',
   component: Info
 }
 

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Meta from './Meta'
-import Header from './Header'
-import Footer from './Footer'
+import Header from '../organisms/Header'
+import Footer from '../organisms/Footer'
 import config from '@/lib/config'
 
 export default function Layout({children, ...props}) {

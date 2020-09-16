@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
-import Layout from '@/components/global/Layout'
+import Layout from '@/components/common/Layout'
 import {fetcher} from '@/lib/functions'
 import Link from 'next/link'
-import {Info} from '@/components/blocks/Alerts'
+import {Info} from '@/components/molecules/Alerts'
 
 export default function StaticGeneration(props) {
   return (

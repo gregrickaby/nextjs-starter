@@ -18,6 +18,7 @@ https://the-nextjs-starter.vercel.app/
 ✨ **Behold...The Features** ✨
 
 - [TailwindCSS](https://tailwindcss.com)
+- [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)
 - [Storybook](https://storybook.js.org)
 - [Chromatic](https://www.chromatic.com)
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
@@ -47,7 +48,8 @@ https://the-nextjs-starter.vercel.app/
     - [Page Level](#page-level)
   - [Hosting at Vercel (optional)](#hosting-at-vercel-optional)
   - [Progressive Web App (optional)](#progressive-web-app-optional)
-- [📚 Storybook (optional)](#-storybook-optional)
+- [⚛ Atomic Design](#-atomic-design)
+- [📚 Storybook](#-storybook)
   - [About](#about)
   - [Configuration](#configuration)
   - [Stories](#stories)
@@ -55,7 +57,7 @@ https://the-nextjs-starter.vercel.app/
   - [About](#about-1)
   - [Configuration](#configuration-1)
 - [:octocat: Contributing](#octocat-contributing)
-- [🙌🏻 Credits](#-credits)
+- [🙌🏻 Credits & License](#-credits--license)
 
 ---
 
@@ -222,7 +224,68 @@ module.exports = withPWA({
 
 ---
 
-## 📚 Storybook (optional)
+## ⚛ Atomic Design
+
+To quote [Brad Frost's](https://bradfrost.com/) "[Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)".
+
+> In the natural world, atomic elements combine together to form molecules. These molecules can combine further to form relatively complex organisms.
+
+**Atoms**
+
+Serve as the foundational building blocks that comprise all our user interfaces. These include basic HTML elements like form labels, inputs, buttons, and others **_that can’t be broken down any further without ceasing to be functional_**.
+
+**Molecules**
+
+Are relatively simple **_groups of UI elements functioning together as a unit_**. For example, a form label, search input, and button can join together to create a search form molecule.
+
+**Organisms**
+
+Are relatively **_complex UI components composed of groups of molecules and/or atoms and/or other organisms_**. These organisms form distinct sections of an interface.
+
+**Templates**
+
+Are page-level objects that **_place components into a layout and articulate the design’s underlying content structure-- rather than the final content._**
+
+**Pages**
+
+Are specific instances of templates **_that show what a UI looks like with real content in place_**.
+
+**Component organization:**
+
+```
+/components
+├── /atoms
+│   ├── Button.stories.js
+│   ├── Button.js
+│   ├── Input.stories.js
+│   ├── Input.js
+│   ├── Label.stories.js
+│   └── Label.js
+├── /molecules
+│   ├── Logo.stories.js
+│   ├── Logo.js
+│   ├── Navigation.stories.js
+│   ├── Navigation.js
+│   ├── SearchForm.stories.js
+│   └── SearchForm.js
+├── /organisms
+│   ├── Header.stories.js
+│   └── Header.js
+├── /templates
+│   ├── Homepage.stories.js
+│   └── Homepage.js
+/pages
+├── index.js
+├── about.js
+```
+
+---
+
+The Atomic Design System all comes together and is cataloged in Storybook:
+
+![screenshot of storybook](https://dl.dropbox.com/s/eidco5h8zlxpbea/Screen%20Shot%202020-09-07%20at%203.47.26%20PM.png?dl=0)
+
+## 📚 Storybook
 
 [View this starter's Storybook](https://main--5f4fb61efe7d0c0022b750b7.chromatic.com).
 
@@ -232,7 +295,7 @@ This starter comes bundled with [Storybook](https://storybook.js.org/). Storyboo
 
 Since Storybook v6, you can use both [Component Story Format](https://storybook.js.org/docs/react/api/csf) (CSF) v1 and the new v2 format for writing component examples [using args](https://storybook.js.org/docs/react/writing-stories/args).
 
-Storybook v6 ships by default with a set of [“essential” addons](https://storybook.js.org/docs/react/essentials/introduction) that add to the initial user experience:
+Storybook v6 ships by default with a set of [essential addons](https://storybook.js.org/docs/react/essentials/introduction) that add to the initial user experience:
 
 - [Actions](https://storybook.js.org/docs/react/essentials/actions)
 - [Backgrounds](https://storybook.js.org/docs/react/essentials/backgrounds)
@@ -241,18 +304,18 @@ Storybook v6 ships by default with a set of [“essential” addons](https://sto
 - [Toolbars & Globals](https://storybook.js.org/docs/react/essentials/toolbars-and-globals)
 - [Viewport](https://storybook.js.org/docs/react/essentials/viewport)
 
-In addition to the "essentials", I've also included both the [accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y) and links addon.
+In addition to the "essentials", I've also included both the [accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y) and [links](https://github.com/storybookjs/storybook/tree/master/addons/links) addons.
 
-Learn more by reading the [official docs](https://storybook.js.org/docs/react/get-started/introduction), and learn first hand by taking the [Learn Storybook](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/) course.
+Learn more by reading the [official docs](https://storybook.js.org/docs/react/get-started/introduction), and learn first hand by taking the [Learn Storybook course](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/).
 
 ### Configuration
 
-The `.storybook` folder is where configuration files are placed.
+The `.storybook` folder is where configuration files are placed. There are two files:
 
-`main.js` is Storybook's primary configuration file:
+`main.ts` is Storybook's primary configuration file:
 
 ```js
-// .storybook/main.js
+// .storybook/main.ts
 module.exports = {
   stories: [
     '../components/**/*.stories.mdx',
@@ -266,10 +329,10 @@ module.exports = {
 }
 ```
 
-and `preview.js`, which provides additional configuration when previewing components. This is where we import TailwindCSS.
+`preview.js` provides additional configuration when previewing components inside Storybook:
 
 ```js
-// .storybook/preview.js
+// .storybook/preview.ts
 import '../styles/index.css'
 
 export const parameters = {
@@ -277,20 +340,24 @@ export const parameters = {
 }
 ```
 
+The config above will import the starter's CSS, so components will look like the front-end.
+
 ### Stories
 
-Storybook is flexible, and you can configure it to look at any directory for stories. You'll often see them placed in a `/stories` directory. I've chosen to keep stories with their components, for example:
+Storybook is flexible, and you can configure it to search in any directory for stories. You'll often see them placed in a `/stories` directory. I've chosen to keep stories with their components, for example:
 
 ```
-├── components
-│   ├── blocks
-│   │   ├── Alerts.js
-│   │   ├── Alerts.stories.js
-│   │   ├── Hero.js
-│   │   └── Hero.stories.js
+/components
+├── /molecules
+│   ├── Alerts.js
+│   ├── Alerts.stories.js
+│   ├── Hero.js
+│   └── Hero.stories.js
 ```
 
-In my experience, it's harder to forget to write or update a story-- if it's in the same directory as the component. If you want to move your stories to their own directory, make sure you update `main.js`
+In my experience, it's harder to forget to write or update a story-- if it's located next to the component. If you want to move your stories to their own directory, make sure you update `main.ts`.
+
+Learn more about [writing stories](https://storybook.js.org/docs/react/get-started/whats-a-story).
 
 ## ♻️ Chromatic (optional)
 
@@ -298,14 +365,14 @@ In my experience, it's harder to forget to write or update a story-- if it's in 
 
 ### About
 
-[Chromatic](https://www.chromatic.com) is a free, cloud-based tool-chain service made by the Storybook maintainers, which helps teams ship UI components faster. It comes with a powerful suite of testing tools, including:
+[Chromatic](https://www.chromatic.com) is a free, cloud-based tool-chain (made by the Storybook maintainers), which helps teams ship UI components faster. It comes with a powerful suite of testing tools including:
 
 - Visual Regression Testing
 - Collaborative UI Review
 - Git Hosting Integration
 - Continuous Integration Workflows
 
-Learn more about publish to Chromatic by reading the [official docs](https://www.learnstorybook.com/design-systems-for-developers/react/en/review/) or by watching [this 3-minute video](https://youtu.be/9o6uB1X-LZ8).
+Learn more about publishing to Chromatic by reading the [official docs](https://www.learnstorybook.com/design-systems-for-developers/react/en/review/) or watching [this 3-minute video](https://youtu.be/9o6uB1X-LZ8).
 
 ### Configuration
 
@@ -335,6 +402,6 @@ To use Chromatic on your project, [sign up for a free account](https://www.chrom
 
 I would love feedback contributions via Github [Issues](https://github.com/gregrickaby/nextjs-starter/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-starter/pulls). 🍻
 
-## 🙌🏻 Credits
+## 🙌🏻 Credits & License
 
-Illustration by Maria Shukshina from <a href="https://icons8.com/">Icons8</a>
+The exploding head illustration is by Maria Shukshina (from <a href="https://icons8.com/">Icons8</a>). This starter is licensed under the [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
