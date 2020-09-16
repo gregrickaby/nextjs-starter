@@ -14,11 +14,11 @@
   "private": true,
   "license": "GPL-2.0",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "dependencies": {
     "hamburger-react": "^2.2.0",
-    "next": "next@canary",
+    "next": "latest",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
@@ -57,7 +57,6 @@
     "export": "next export",
     "lint": "eslint ./ --fix || true",
     "start": "next start",
-    "storybook": "start-storybook -p 6006",
-    "chromatic": "npx chromatic --project-token mn2tcfg0gc"
+    "storybook": "start-storybook -p 6006"
   }
 }

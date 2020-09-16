@@ -32,9 +32,9 @@ export function Warning({children}) {
 }
 
 Info.propTypes = {
-  children: PropTypes.object.isRequired
+  children: PropTypes.any.isRequired
 }
 
 Warning.propTypes = {
-  children: PropTypes.object.isRequired
+  children: PropTypes.any.isRequired
 }

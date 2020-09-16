@@ -48,5 +48,5 @@ export async function getStaticProps() {
 }
 
 StaticGeneration.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.array
 }

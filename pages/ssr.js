@@ -48,5 +48,5 @@ export async function getServerSideProps() {
 }
 
 ServerSideRendering.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.array
 }

@@ -21,7 +21,7 @@ Layout.defaultProps = {
 }
 
 Layout.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.object.isRequired,
   description: PropTypes.string,
   title: PropTypes.string
 }

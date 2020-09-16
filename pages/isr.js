@@ -48,5 +48,5 @@ export async function getStaticProps() {
 }
 
 IncrementalStaticRegeneration.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.array
 }
