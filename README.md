@@ -72,7 +72,7 @@ Use [create-next-app](https://www.npmjs.com/package/create-next-app) to get up a
 **Yarn**
 
 ```bash
-yarn create next-app nextjs-starter--example https://github.com/gregrickaby/nextjs-starter
+yarn create next-app nextjs-starter --example https://github.com/gregrickaby/nextjs-starter
 ```
 
 **NPX**
