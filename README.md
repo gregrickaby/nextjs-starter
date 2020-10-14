@@ -36,8 +36,10 @@ https://the-nextjs-starter.vercel.app/
 
 ## 🗂 Table of Contents <!-- omit in toc -->
 
-- [🚀 Install](#-install)
-- [🔧 Setup](#-setup)
+- [🚀 Development](#-development)
+  - [Install](#install)
+  - [Working with Next.js](#working-with-nextjs)
+- [🔧 Project Overview](#-project-overview)
   - [Global Config](#global-config)
   - [Styles](#styles)
     - [TailwindCSS](#tailwindcss)
@@ -61,15 +63,29 @@ https://the-nextjs-starter.vercel.app/
 
 ---
 
-## 🚀 Install
+## 🚀 Development
 
-Use [create-next-app](https://www.npmjs.com/package/create-next-app) to install:
+### Install
+
+Use [create-next-app](https://www.npmjs.com/package/create-next-app) to get up and running with either Yarn or NPX.
+
+**Yarn**
 
 ```bash
-yarn create next-app --example https://github.com/gregrickaby/nextjs-starter
+yarn create next-app nextjs-starter--example https://github.com/gregrickaby/nextjs-starter
 ```
 
-Inside the app directory, you can run several commands.
+**NPX**
+
+```bash
+npx create-next-app nextjs-starter --example https://github.com/gregrickaby/nextjs-starter
+```
+
+---
+
+### Working with Next.js
+
+Inside the `nextjs-starter` directory, you can run several commands.
 
 Start the development server:
 
@@ -91,7 +107,7 @@ yarn start
 
 ---
 
-## 🔧 Setup
+## 🔧 Project Overview
 
 ### Global Config
 
