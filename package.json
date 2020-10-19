@@ -63,7 +63,7 @@
     "react-is": "^16.13.1",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "^1.9.2"
+    "tailwindcss": "^1.9.4"
   },
   "husky": {
     "hooks": {
