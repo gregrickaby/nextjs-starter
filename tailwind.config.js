@@ -1,5 +1,6 @@
 module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'media',
   theme: {
     extend: {
       container: {
@@ -10,10 +11,5 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-    defaultLineHeights: true,
-    standardFontWeights: true
-  }
+  future: {}
 }
