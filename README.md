@@ -30,6 +30,7 @@ https://the-nextjs-starter.vercel.app/
 - Minimal styles
 - Global config file
 - SEO at the page level
+- Sitemap generation
 - PWA Ready
 
 ---
@@ -69,15 +70,11 @@ https://the-nextjs-starter.vercel.app/
 
 Use [create-next-app](https://www.npmjs.com/package/create-next-app) to get up and running with either Yarn or NPX.
 
-**Yarn**
-
 ```bash
 yarn create next-app nextjs-starter --example https://github.com/gregrickaby/nextjs-starter
-```
 
-**NPX**
+or
 
-```bash
 npx create-next-app nextjs-starter --example https://github.com/gregrickaby/nextjs-starter
 ```
 
