@@ -1,6 +1,9 @@
 const path = require('path')
 
 module.exports = {
+  reactOptions: {
+    fastRefresh: true
+  },
   stories: [
     '../components/**/*.stories.mdx',
     '../components/**/*.stories.@(js|jsx|ts|tsx)'
