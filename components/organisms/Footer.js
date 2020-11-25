@@ -3,7 +3,7 @@ import config from '@/lib/config'
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer>
       <div className="container p-4 lg:px-0 text-center text-sm">
         &copy; {new Date().getFullYear()} {config.siteName} by {config.author}{' '}
         &middot;{' '}

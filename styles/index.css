@@ -1,23 +1,12 @@
 @tailwind base;
-
-/* Write your own custom base styles here */
-
-/* Start purging... */
 @tailwind components;
-
-/* Stop purging. */
+@tailwind utilities;
 
 html,
 body {
-  @apply dark:bg-gray-900;
+  @apply dark:bg-gray-900 dark:text-white;
 }
 
-/* Write your own custom component styles here */
 .shrink {
   @apply py-4 duration-100 ease-in-out;
 }
-
-/* Start purging... */
-@tailwind utilities;
-
-/* Stop purging. */

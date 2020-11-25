@@ -8,7 +8,7 @@ function Links() {
     <>
       {config.navigation.map((item, index) => (
         <Link href={item.href} key={index}>
-          <a className="ml-8 transition-colors duration-200 ease-in-out hover:text-gray-600">
+          <a className="ml-8 transition-colors duration-200 ease-in-out">
             {item.label}
           </a>
         </Link>
@@ -19,7 +19,7 @@ function Links() {
 
 function Drawer() {
   return (
-    <div className="absolute w-56 h-screen py-12 px-4 top-0 right-0 flex flex-col bg-white shadow-md">
+    <div className="bg-white dark:bg-gray-900 absolute w-56 h-screen py-12 px-4 top-0 right-0 flex flex-col shadow-md z-50">
       <Links />
     </div>
   )

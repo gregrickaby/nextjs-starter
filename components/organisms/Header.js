@@ -25,10 +25,7 @@ export default function Header() {
     shrinkHeader(headerRef)
   }, [])
   return (
-    <header
-      ref={headerRef}
-      className="sticky top-0 py-8 transition-all bg-white border-b border-gray-200"
-    >
+    <header ref={headerRef} className="sticky top-0 py-8 transition-all">
       <div className="container px-4 lg:px-0 flex items-center justify-between">
         <Logo />
         <Navigation />
