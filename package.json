@@ -47,7 +47,7 @@
     "@storybook/addon-essentials": "^6.1.6",
     "@storybook/addon-links": "^6.1.6",
     "@storybook/react": "^6.1.6",
-    "babel-loader": "^8.2.1",
+    "babel-loader": "^8.2.2",
     "chromatic": "^5.4.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
