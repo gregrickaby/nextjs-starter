@@ -1,15 +1,15 @@
 {
-  "name": "nextjs-starter",
-  "version": "0.1.0",
-  "description": "A slightly opinionated, yet bare-bones Next.js starter.",
-  "homepage": "https://github.com/gregrickaby/nextjs-starter/blob/main/README.md",
+  "name": "nextjs-wordpress-starter",
+  "version": "1.0.0",
+  "description": "Next.js WordPress starter.",
+  "homepage": "https://github.com/WebDevStudios/nextjs-wordpress-starter/blob/main/README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregrickaby/nextjs-starter.git"
+    "url": "git+https://github.com/WebDevStudios/nextjs-wordpress-starter.git"
   },
-  "author": "Greg Rickaby <gregrickaby@gmail.com>",
+  "author": "WebDevStudios <contact@webdevstudios.com>",
   "bugs": {
-    "url": "https://github.com/gregrickaby/nextjs-starter/issues"
+    "url": "https://github.com/WebDevStudios/nextjs-wordpress-starter/issues"
   },
   "private": true,
   "license": "GPL-2.0",
@@ -20,8 +20,8 @@
     "build": "next build",
     "build-storybook": "build-storybook",
     "clean": "rm -rf .next",
-    "deploy prod": "now --prod",
-    "deploy staging": "now",
+    "deploy prod": "vercel --prod",
+    "deploy staging": "vercel",
     "dev": "yarn clean && next dev",
     "develop": "yarn dev",
     "export": "next export",
@@ -31,12 +31,12 @@
     "lint:js": "npx eslint --config=.eslintrc.js ./ --fix || true",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "chromatic": "npx chromatic --project-token mn2tcfg0gc",
+    "chromatic": "npx chromatic --project-token zp8e8oo1lq",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
     "hamburger-react": "^2.4.0",
-    "next": "10.0.3",
+    "next": "latest",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
