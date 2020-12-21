@@ -1,26 +1,26 @@
 const path = require('path')
 
+// https://storybook.js.org/docs/react/configure/overview
 module.exports = {
   reactOptions: {
-    fastRefresh: true
+    fastRefresh: true,
+    strictMode: true
   },
-  stories: [
-    '../components/**/*.stories.mdx',
-    '../components/**/*.stories.@(js|jsx|ts|tsx)'
-  ],
+  stories: ['../components/**/**/*.stories.js'],
   addons: [
-    '@storybook/addon-links',
+    '@storybook/addon-a11y',
     '@storybook/addon-essentials',
-    '@storybook/addon-a11y'
+    '@storybook/addon-links',
+    'storybook-css-modules-preset'
   ],
-  // https://storybook.js.org/docs/react/configure/webpack
   webpackFinal: async (config) => {
-    // Add support for the @ symbol alias for root directory imports.
+    // Enable @ symbol aliases.
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, '../')
     }
 
+    // Enable sourcemaps in Storybook.
     config.module.rules.push({
       test: /\.css$/i,
       use: [
