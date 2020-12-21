@@ -6,7 +6,3 @@ html,
 body {
   @apply dark:bg-gray-900 dark:text-white;
 }
-
-.shrink {
-  @apply py-4 duration-100 ease-in-out;
-}
