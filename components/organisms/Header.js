@@ -1,6 +1,4 @@
-import {useEffect, useRef} from 'react'
 import Link from 'next/link'
-import {shrinkHeader} from '@/lib/functions'
 import Navigation from '../molecules/Navigation'
 
 function Logo() {
@@ -20,12 +18,8 @@ function Logo() {
 }
 
 export default function Header() {
-  const headerRef = useRef(null)
-  useEffect(() => {
-    shrinkHeader(headerRef)
-  }, [])
   return (
-    <header ref={headerRef} className="sticky top-0 py-8 transition-all">
+    <header className="sticky top-0 py-8 transition-all">
       <div className="container px-4 lg:px-0 flex items-center justify-between">
         <Logo />
         <Navigation />
